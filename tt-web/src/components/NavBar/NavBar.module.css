@@ -1,0 +1,32 @@
+.nav{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+  
+    height: 100px;
+}
+
+.nav__logoContainer {
+  display: flex;
+  
+}
+
+.nav__logo {
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+
+.nav__links{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
