@@ -1,32 +1,93 @@
-.nav{
-    border: 2px solid blue;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 10px;
-  
-    height: 100px;
-}
-
-.nav__logoContainer {
+.cabecera {
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  min-height: 90px;
+  background: linear-gradient(rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.9));
+  padding: 1em;
   display: flex;
-  
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
 }
 
-.nav__logo {
-  object-fit: contain;
+/*---------------Container Ícono hamburguesa---------------*/
+.cabeceraButton {
+  border: none;
+  display: none;
   cursor: pointer;
+  background: transparent;
+}
+.cabeceraSvg {
+  color: white;
+  font-size: 20px;
+  transition: 300ms all ease;
+}
+.cabeceraSvg:hover {
+  transform: scale(1.1);
 }
 
+/*--------------- Container Logo ---------------*/
 
+.containerLogo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
 
-.nav__links{
+/*--------------- Container Links ---------------*/
+.cabeceraNav {
   display: flex;
   align-items: center;
-  gap: 5px;
-  border: 2px solid black;
-  cursor: pointer;
+  justify-content: center;
+}
+.cabeceraUl {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.cabeceraLi {
+  margin: 0 .5em;
+  list-style: none;
+}
+.cabeceraLiActive {
+  background: #e63946;
+  padding: 5px;
+}
+.cabeceraA {
+  padding: 10px;
+}
+
+
+/*---------Responsive---------*/
+@media screen and (max-width: 1030px){
+  .cabeceraButton {
+      display: flex;
+  }
+  .cabeceraNav {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 0vh;
+      opacity: 0;
+      overflow: hidden;
+      transition: all .5s ease;
+  }
+  .cabeceraNav.isActive {
+      height: 55vh;
+      opacity: 1;
+  }
+  .cabeceraUl {
+      flex-direction: column;
+  }
+  .cabeceraLi {
+      margin: .5em 0;
+  }
 }

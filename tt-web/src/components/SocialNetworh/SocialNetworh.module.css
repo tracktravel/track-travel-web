@@ -1,0 +1,33 @@
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: spanHeroSMB 2000ms;
+}
+
+.socialMedia a {
+    font-size: 40px;
+    color: #0d1b2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease 300ms;
+}
+
+.socialMedia a:hover {
+    transform: scale(1.3);
+}
+
+.linkedin:hover {
+    color: #0e76a8;
+}
+.codepen:hover {
+    color: #6495Ed;
+}
+.github:hover {
+    color: #c9510c;
+}
+.pinterest:hover {
+    color: #E60023;
+}
