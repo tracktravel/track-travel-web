@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
+import internationalPhones from '../../helpers/internationalPhones'
 
 
 function validate (input) {
@@ -44,7 +45,13 @@ export default function Contact () {
         message: ''
     });
 
-
+    const options = () => {
+        // console.log(internationalPhones)
+        return internationalPhones.map((e, index) => {
+          return <option key={index} value={e.value}>{e.value} {e.label}</option>;
+        });
+      };
+      console.log(input.phone)
     function handleChange(e) {
         setInput({
             ...input,
@@ -60,22 +67,22 @@ export default function Contact () {
     function handleSubmit(e) {
         e.preventDefault();
         emailjs
-          .sendForm('service_zfg4l7e', 'template_kypswm8', e.target, 'zXTg4GsN07LSJ9aKf')
-          .then(() => {
+        .sendForm('service_zfg4l7e', 'template_kypswm8', e.target, 'zXTg4GsN07LSJ9aKf')
+        .then(() => {
             setInput({
-              name: '',
-              email: '',
-              phone: '',
-              country: '',
-              message: ''
+                name: '',
+                email: '',
+                phone: '',
+                country: '',
+                message: ''
             });
             setFormSubmitted(true);
             setTimeout(() => {
-              setFormSubmitted(false);
+            setFormSubmitted(false);
             }, 10000); // Set timeout for 10 seconds
-          })
-          .catch((error) => console.log(error));
-      };
+        })
+        .catch((error) => console.log(error));
+    };
 
 
     return (
@@ -90,6 +97,17 @@ export default function Contact () {
                             <input className={styles.input} type="email" name='email' value={ input.email } placeholder='Email' onChange={(e) => handleChange(e)} />
                             {errors.email && <p className="danger">{ errors.email }</p>}
                             <input className={styles.input} type="text" name='phone' value={ input.phone } placeholder='Teléfono' onChange={(e) => handleChange(e)} />
+                            <select
+                                type="text"
+                                list="phones"
+                                name="phone"
+                                onChange={(e) => handleChange(e)}
+                                placeholder="Phone"
+                                required
+                                >
+                                {options()}
+                            </select>
+
                             {errors.phone && <p className="danger">{ errors.phone }</p>}
                             <input className={styles.input} type="text" name='country' value={ input.country } placeholder='País' onChange={(e) => handleChange(e)} />
                             {errors.country && <p className="danger">{ errors.country }</p>}

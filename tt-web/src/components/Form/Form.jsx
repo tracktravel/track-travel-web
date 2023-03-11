@@ -7,7 +7,7 @@ const INITIAL_CONTACT = {
     email: "",
     message: "",
     phone: "",
-  };
+};
   
   const REGEX_TEXT = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
   const REGEX_EMAIL = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
