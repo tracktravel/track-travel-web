@@ -41,7 +41,7 @@ export default function NavBar () {
         <header className={styles.cabecera}>
           {/* Logo de la startup */}
             <div className={styles.containerLogo}>
-              <Image width={40} height={50} src={logoTravel} alt="Logo" />
+              <Image width={'auto'} height={50} src={logoTravel} alt="Logo" />
               <h1>Track Travel</h1>
             </div>
 

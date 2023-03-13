@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-top: -2rem;
+}
+
+
+.title {
+  max-width: 15rem;
+}
+
+.button {
+  padding: 0.5rem 0.8rem;
+  border: 2px solid #dd302c;
+  border-radius: 1vh;
+  color: #dd302c;
+  background-color: inherit;
+}

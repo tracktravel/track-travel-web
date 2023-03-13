@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/index.module.css'
 import Solutions from '@/components/solutions/Solutions'
+import Hero from '@/components/hero/Hero'
+import HomeDescription from '@/components/home-description/HomeDescription'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,7 +17,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <section id="solutions" className="snap-start">
+        <section id="solutions" className={styles.container}>
+          <Hero />
+          <HomeDescription />
           <Solutions />
         </section>
       </div>
