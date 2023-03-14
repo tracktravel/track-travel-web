@@ -12,9 +12,11 @@
     justify-content: space-around;
     height: 650px;
     border-radius: 20px;
-    box-shadow: 50px 100px 100px 20px rgba(0, 0, 0,1);
+    /* box-shadow: 50px 100px 100px 20px rgba(0, 0, 0,1); */
     overflow: hidden;
-    background: white;
+    background: #F7F5F5;
+    margin-top: -2rem;
+    margin-bottom: -2.5rem;
 }
 
 /*---------------Container imagen---------------*/

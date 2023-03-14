@@ -1,8 +1,5 @@
 .footer{
-    background: linear-gradient(rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.9));
-    justify-content: space-between;
-    align-items: right;
-    padding: 1rem;
-    /* clip-path: polygon(0 73%, 100% 0%, 100% 99%, 0% 100%); */
-    /* clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%); */
+    background: #272727;
+    padding: 2rem;
+    clip-path: polygon(0 33%, 100% 0%, 100% 100%, 0% 100%);
 }

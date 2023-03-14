@@ -3,7 +3,8 @@
   z-index: 1;
   width: 100%;
   min-height: 90px;
-  background: linear-gradient(rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.9));
+  /* background: linear-gradient(rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.9)); */
+  background: #272727;
   padding: 1em;
   display: flex;
   flex-flow: row wrap;

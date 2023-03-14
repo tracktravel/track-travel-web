@@ -1,9 +1,9 @@
 .socialMedia {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+    gap: 25px;
     animation: spanHeroSMB 2000ms;
+    margin-top: 1rem;
 }
 
 .socialMedia a {
