@@ -23,7 +23,7 @@
 }
 .cabeceraSvg {
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   transition: 300ms all ease;
 }
 .cabeceraSvg:hover {
@@ -44,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 .cabeceraUl {
   display: flex;
@@ -58,7 +59,7 @@
 }
 .cabeceraLiActive {
   background: #e63946;
-  padding: 5px;
+  /* padding: 5px; */
 }
 .cabeceraA {
   padding: 10px;
@@ -66,7 +67,7 @@
 
 
 /*---------Responsive---------*/
-@media screen and (max-width: 1030px){
+@media screen and (max-width: 1027px){
   .cabeceraButton {
       display: flex;
   }
@@ -82,10 +83,11 @@
       transition: all .5s ease;
   }
   .cabeceraNav.isActive {
-      height: 55vh;
+      height: 23vh;
       opacity: 1;
   }
   .cabeceraUl {
+      margin-top: -3rem;
       flex-direction: column;
   }
   .cabeceraLi {
