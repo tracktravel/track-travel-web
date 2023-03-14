@@ -7,7 +7,6 @@
   margin-bottom: -2.5rem;
 }
 
-
 .title {
   max-width: 15rem;
 }
@@ -16,6 +15,6 @@
   padding: 0.5rem 0.8rem;
   border: 2px solid #dd302c;
   border-radius: 1vh;
-  color: #dd302c;
+  color: var(--main-color);
   background-color: inherit;
 }

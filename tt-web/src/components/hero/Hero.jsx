@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.containerText}>
-        <h1 className={styles.title}>Tours más inteligentes como nunca antes para tu agencia</h1>
+        <h1 className={styles.title}>Tours más inteligentes para tu agencia</h1>
         <button className={styles.button}>Sepa como</button>
       </div>
       <Image src={heroImage} width={500} height={500} alt='Imagen principal de la pagina'/>
