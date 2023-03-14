@@ -4,7 +4,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import styles from "./BackTotopButton.module.css";
 
 export default function BackTotopButton() {
-  const [backToTopButton, setBackToTopButton] = useState(true);
+  const [backToTopButton, setBackToTopButton] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

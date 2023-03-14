@@ -25,7 +25,8 @@
 
 .items {
     display: flex;
-    height: 40px;
+    
+    height: 2.5rem;
     width: auto;
     color: var(--main-color);
 }
@@ -48,10 +49,26 @@
 
 
 @media screen and (min-width: 770px) {
-    .container {
+  .container {
         flex-direction: row;
-        justify-content: space-between;
-        /* margin: 0 auto; */
         max-width: 80rem;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
+
+  .titleContainer {
+    max-width: 20rem;
+  }    
+
+  .divs {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto;
+    width: 90%;
+  }
+
+  .items {
+    width: 80vh;
+  }
+
 }

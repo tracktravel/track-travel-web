@@ -41,7 +41,7 @@ const HomeDescription = () => {
           Track Travel permite a los usuarios rastrear su viaje de manera automática, dejando la tarea de rastrear su viaje a la aplicación. De esta manera, los usuarios pueden concentrarse en disfrutar de su viaje.
           </p>
         </div>
-        <div>
+        {/* <div>
           <h3>
             <BsController className={styles.items}/>
             Control
@@ -49,7 +49,7 @@ const HomeDescription = () => {
           <p>
           Track Travel permite a los usuarios tener control del viaje que están realizando, ya que pueden ver el viaje de manera visual en un mapa.
           </p>
-        </div>
+        </div> */}
         <div>
           <h3>
             <FaHandshake className={styles.items}/>

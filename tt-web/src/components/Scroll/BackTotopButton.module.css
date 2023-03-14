@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     transition: 300ms all ease;
+    z-index: 1;
 }
 
 .botonScroll:hover {
