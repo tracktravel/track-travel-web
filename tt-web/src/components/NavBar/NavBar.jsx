@@ -37,7 +37,7 @@ export default function NavBar() {
   return (
     <div className={styles.background}>
       <header className={styles.cabecera}>
-        {/* Logo de la startup */}
+        {/* Logo de la startup */} 
         <Link href="/" className={styles.containerLogo}>
           <Image width={"auto"} height={50} src={logoTravel} alt="Logo" />
           <h1>Track Travel</h1>
