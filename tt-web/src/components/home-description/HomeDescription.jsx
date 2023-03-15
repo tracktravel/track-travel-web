@@ -6,9 +6,9 @@ import styles from "./HomeDescription.module.css";
 
 const HomeDescription = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='home-description'>
       <div className={styles.titleContainer}>
-        <h2 className={styles.title}>Track Travel</h2>
+        <h1 className={styles.title}>Track Travel</h1>
         <p className={styles.titleDescription}>
           Track Travel es una aplicación web que permite a los usuarios rastrear su historial de viajes. Los usuarios pueden crear una cuenta y iniciar sesión en su historial de viajes. También pueden ver su historial de viajes y editarlo.
         </p>

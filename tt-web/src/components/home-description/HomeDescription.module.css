@@ -19,9 +19,9 @@
   font-size: large;
 }
 
-.title {
+/* .title {
   font-size: 2rem;
-}
+} */
 
 .items {
     display: flex;

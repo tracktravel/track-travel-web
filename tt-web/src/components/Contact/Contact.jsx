@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
-import internationalPhones from '../../helpers/internationalPhones'
+import internationalPhones from '../../helpers/internationalPhones';
 
 
 function validate (input) {

@@ -1,86 +1,105 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logoTravel from "../../assets/logo.png";
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./NavBar.module.css";
 
+export default function NavBar() {
+  const [activeSection, setActiveSection] = useState("aboutMe");
+  const [menu, setMenu] = useState(false);
 
-export default function NavBar () {
-    const [activeSection, setActiveSection] = useState('aboutMe');
-    const [ menu , setMenu ] = useState( false );
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+  function handleScroll() {
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+        setActiveSection(section.getAttribute("id"));
+      }
+    });
+  }
 
-    function handleScroll() {
-        const sections = document.querySelectorAll('section');
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
-                setActiveSection(section.getAttribute('id'));
-            }
-        });
-    };
+  function handleSectionClick(sectionName) {
+    setActiveSection(sectionName);
+    setMenu(false);
+  }
 
-    function handleSectionClick(sectionName) {
-        setActiveSection(sectionName);
-        setMenu(false);
+  const toggleMenu = () => {
+    setMenu(!menu);
+  };
 
-    };
+  return (
+    <div className={styles.background}>
+      <header className={styles.cabecera}>
+        {/* Logo de la startup */}
+        <Link href="/" className={styles.containerLogo}>
+          <Image width={"auto"} height={50} src={logoTravel} alt="Logo" />
+          <h1>Track Travel</h1>
+        </Link>
 
-    const toggleMenu = () => {
-        setMenu( !menu )
-    };
+        <button onClick={toggleMenu} className={styles.cabeceraButton}>
+          <GiHamburgerMenu className={styles.cabeceraSvg} />
+        </button>
 
-
-    return (
-        <header className={styles.cabecera}>
-          {/* Logo de la startup */}
-            <div className={styles.containerLogo}>
-              <Image width={'auto'} height={50} src={logoTravel} alt="Logo" />
-              <h1>Track Travel</h1>
-            </div>
-
-            <button onClick={ toggleMenu } className={styles.cabeceraButton}>
-                <GiHamburgerMenu className={styles.cabeceraSvg}/>
-            </button>
-
-            <nav className={ `${styles.cabeceraNav} ${ menu ? styles.isActive : '' }` }>
-                <ul className={styles.cabeceraUl}>
-                    <li className={`${styles.cabeceraLi} ${activeSection === 'home' ? styles.cabeceraLiActive : ''}`}>
-                        <Link className={styles.cabeceraA} href="/" onClick={() => handleSectionClick('home')}>Home</Link>
-                
-                    </li>
-                    <li className={`${styles.cabeceraLi} ${activeSection === 'about' ? styles.cabeceraLiActive : ''}`}>
-                      <Link className={styles.cabeceraA} href="/about" onClick={() => handleSectionClick('about')}>About</Link> 
-                    </li>
-                    <li className={`${styles.cabeceraLi} ${activeSection === 'contact' ? styles.cabeceraLiActive : ''}`}>
-                        <Link className={styles.cabeceraA} href="/contact" onClick={() => handleSectionClick('contact')}>Contact</Link>
-                    </li>
-                    {/* <li className={`${styles.cabeceraLi} ${activeSection === 'portfolio' ? styles.cabeceraLiActive : ''}`}>
+        <nav className={`${styles.cabeceraNav} ${menu ? styles.isActive : ""}`}>
+          <ul className={styles.cabeceraUl}>
+            <li
+              className={`${styles.cabeceraLi} ${
+                activeSection === "home" ? styles.cabeceraLiActive : ""
+              }`}
+            >
+              <Link
+                className={styles.cabeceraA}
+                href="/"
+                onClick={() => handleSectionClick("home")}
+              >
+                Home
+              </Link>
+            </li>
+            <li
+              className={`${styles.cabeceraLi} ${
+                activeSection === "about" ? styles.cabeceraLiActive : ""
+              }`}
+            >
+              <Link
+                className={styles.cabeceraA}
+                href="/about"
+                onClick={() => handleSectionClick("about")}
+              >
+                About
+              </Link>
+            </li>
+            <li
+              className={`${styles.cabeceraLi} ${
+                activeSection === "contact" ? styles.cabeceraLiActive : ""
+              }`}
+            >
+              <Link
+                className={styles.cabeceraA}
+                href="/contact"
+                onClick={() => handleSectionClick("contact")}
+              >
+                Contact
+              </Link>
+            </li>
+            {/* <li className={`${styles.cabeceraLi} ${activeSection === 'portfolio' ? styles.cabeceraLiActive : ''}`}>
                          <a className={`${styles.cabeceraA}`} href="#portfolio" onClick={() => handleSectionClick('portfolio')}>PORTAFOLIO</a> 
                     </li> */}
-                </ul>
-            </nav>
-        </header>
-    );
-};
+          </ul>
+        </nav>
+      </header>
+    </div>
+  );
+}
 
-
-
-
-
-
-
-
-
-
-/*
-import React, { useState, useEffect } from 'react';
+{
+  /* import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import logoTravel from "../../assets/logo.png";
@@ -161,4 +180,5 @@ export default function NavBar () {
             </nav>
         </header>
     );
-};*/
+};  */
+}

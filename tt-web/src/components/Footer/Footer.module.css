@@ -1,5 +1,47 @@
-.footer{
+/* .footer{
     background: #272727;
     padding: 2rem;
     clip-path: polygon(0 33%, 100% 0%, 100% 100%, 0% 100%);
+} */.footer{
+    width: 100%;
+    background: #272727;
+    height: 500px;
+    padding: 0 30px;
+}
+.containerOne {
+    border-bottom: 1px solid #343a40;
+    padding: 50px 0;
+}
+
+.containerTwo {
+    height: 180px;
+    width: 100%;
+    color: #dcdcdd;
+}
+.column {
+    height: 100%;
+    width: 250px;
+    color: #dcdcdd;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.column a {
+    text-decoration: none;
+    color: #dcdcdd;
+    font-size: 14px;
+}
+.column a:hover {
+    color: teal;
+}
+.textFinal {
+    color: #dcdcdd;
+}
+.marca {
+    font-weight: bold;
+}
+.marca:hover {
+    color: teal;
 }

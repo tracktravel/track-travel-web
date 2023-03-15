@@ -9,6 +9,7 @@
 
 :root {
   --main-color: #dd302c;
+  --bg-color: #F7F5F5;
 }
 
 * {
@@ -40,7 +41,7 @@ body {
 
 main {
   display: block;
-  background: #F7F5F5;
+  background: var(--bg-color);
   box-shadow: 0px 5px 7px -4px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 5px 7px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 5px 7px -4px rgba(0,0,0,0.75);
@@ -52,7 +53,7 @@ main {
     */
 
 h1 {
-  font-size: 2em;
+  font-size: 1.75em;
   margin: 0.67em 0;
 }
 
