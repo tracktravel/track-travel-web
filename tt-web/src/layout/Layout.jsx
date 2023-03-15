@@ -16,7 +16,7 @@ export default function Layout({children}) {
         <WhatsApp />
         <BackTotopButton />
         {/* <Contact />[] */}
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </>
   );
