@@ -388,3 +388,360 @@ template {
 ::-webkit-scrollbar-track-piece {
   background: black;
 } */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&display=swap');/*font-family: 'Cormorant Garamond', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');   /*font-family: 'Nanum Myeongjo', serif;*/
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+
+
+/*---------------------EXTILOS GLOBALES---------------------*/
+
+/*---------Bloque para altura de página a 100vh---------*/
+.block {
+    width: 100%;
+    height: 100vh;
+    color: #343a40;
+    background: #f8f9fa;
+}
+.block__container {
+    width: 1200px;
+    margin: 0 auto 30px auto;
+}
+.block__containerOurWork {
+    width: 1200px;
+    margin: 0 auto 30px auto;
+    height: 100vh;
+}
+
+/*---------Bloque para altura de página con más de 100vh---------*/
+.blockMore {
+    width: 100%;
+    color: #343a40;
+    background: #f8f9fa;
+    margin: 0 0 50px 0;
+}
+
+/*---------Estilos de posicionamiento---------*/
+.flex { display: flex; gap: 10px;}
+.flexRecomended { display: flex; }
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centerColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.jcspaceAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.jcspaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.jcspaceFlexStart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.centerColumnSpaceAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.centerColumnSpaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.AIflexEnd {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.AIFlexStart{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.AIFlexStartColumn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*----------Estilos para botones----------*/
+
+.mostRead {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e63946;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.recommended {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0B5891;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.moreNews {
+    background: #e63946;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+}
+.tendencies {
+    background: #2a9d8f;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+}
+.readToo {
+    background: #323031;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+}
+.interesYou {
+    background: #62b6cb;
+    width: 100%;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+}
+.buttonSend {
+    border: none;
+    background: #0B5891;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 0 0 10px 0;
+}
+.buttonSend:hover {
+    background: #2a9d8f;
+}
+.buttonDesable {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    background: #e9ecef;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: default;
+}
+
+/*----------Margen center----------*/
+.marginCenter { margin: 0 auto; }
+
+/*----------Bordes----------*/
+.border1 { border: 1px solid #e63946; }
+.border2 { border: 1px solid green; }
+.border3 { border: 1px solid orange; }
+.border4 { border: 1px solid #3a86ff; }
+.border5 { border: 1px solid #593d3b; }
+.border6 { border: 1px solid #541388; }
+.border7 { border: 1px solid #3da5d9; }
+.border8 { border: 1px solid #541388; }
+.border9 { border: 1px solid black; }
+.borderBottom { border-bottom: 1px solid #dee2e6; }
+
+/*----------Títulos de fecha con h5----------*/
+.h5dates {
+    font-size: 10px;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+.h5datesRoutes {
+    font-size: 12px;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+.h5CategoriesCommunities {
+    font-size: 14px;
+    padding: 5px 10px;
+    color:  white;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: #3a86ff;
+}
+.h5CategoriesEcology {
+    font-size: 14px;
+    padding: 5px 10px;
+    color:  white;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: #00796b;
+}
+.h5CategoriesInternational {
+    font-size: 14px;
+    padding: 5px 10px;
+    color:  white;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: #0D47A1;
+}
+.h5CategoriesNovelties {
+    font-size: 14px;
+    padding: 5px 10px;
+    color:  white;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: #B71C1C;
+}
+
+.paragraphStatement {
+    font-size: 14px;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+.paragraphStatement:hover {
+    color: #3c6e71;
+}
+.h2SubTitle { font-size: 24px; }
+
+/*---------Estilos para párrafos---------*/
+.paragraph {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+/*---------Estilos para links que no están en la Landing---------*/
+.links {
+    color: #3a86ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.links:hover {
+    color: #2a9d8f;
+}
+
+/*---------Estilos para links de las noticias en la Landing---------*/
+.linkTitle { text-decoration: none; }
+.linkTitle:hover { color: #3c6e71; }
+.linkText { text-decoration: none; }
+
+.h2Link { font-size: 24px; color: #212529;}
+.h2Link:hover { color: #3c6e71; }
+
+/*---------Estilos para div de imagen principal de la noticia---------*/
+.containerImageNews {
+    position: relative;
+    width: 700px;
+    height: 460px;
+    margin: 0 auto 50px auto;
+}
+
+/*---------Estilos para la imagen principal de la noticia---------*/
+.mainImage { width: 100%; }
+
+/*---------Estilos para imágenes en las rutas de cada noticia---------*/
+.containerImageNewsRoute {
+    width: 700px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+.imageNewsRoute {
+    height: 460px;
+    object-fit: cover;
+}
+
+/*---------Estilos para el título de la noticia---------*/
+.containerTitleNews {
+    position: absolute;
+    top: 380px;
+    left: -20px;
+    display: inline-block;
+}
+.titleNewsLineOne {
+    font-family: 'Roboto', serif;
+    background: #e63946;
+    color: #fff;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+}
+.titleNewsLineTwo {
+    font-family: 'Roboto', serif;
+    background: #e63946;
+    display: inline;
+    width: 100%;
+    color: #fff;
+    padding: 5px 10px;
+}
+.subscribeYou {
+    background: #0B5891;
+    color: #fff;
+    margin: 0 0 10px 0;
+    padding: 5px 5px;
+}
+/*---------Estilos para subtítulos en el cuerpo de la noticia---------*/
+.subtitleNews {
+    background: #0B5891;
+    display: inline;
+    padding: 3px 10px;
+    color: white;
+}

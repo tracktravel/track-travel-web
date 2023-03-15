@@ -1,8 +1,4 @@
-/* .footer{
-    background: #272727;
-    padding: 2rem;
-    clip-path: polygon(0 33%, 100% 0%, 100% 100%, 0% 100%);
-} */.footer{
+.footer{
     width: 100%;
     background: #272727;
     height: 500px;

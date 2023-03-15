@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logoTravel from "../../assets/logo.png";
+import Logo from "@/components/Logo/Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./NavBar.module.css";
 
@@ -37,11 +37,7 @@ export default function NavBar() {
   return (
     <div className={styles.background}>
       <header className={styles.cabecera}>
-        {/* Logo de la startup */} 
-        <Link href="/" className={styles.containerLogo}>
-          <Image width={"auto"} height={50} src={logoTravel} alt="Logo" />
-          <h1>Track Travel</h1>
-        </Link>
+      <div><Logo /></div>
 
         <button onClick={toggleMenu} className={styles.cabeceraButton}>
           <GiHamburgerMenu className={styles.cabeceraSvg} />

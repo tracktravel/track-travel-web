@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
-import internationalPhones from '../../helpers/internationalPhones';
+// import internationalPhones from '../../helpers/internationalPhones';
 
 
 function validate (input) {
@@ -16,11 +16,11 @@ function validate (input) {
     } else if(!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(input.email)) {
         errors.email = "Tu email no es válido.";
     }
-    if(!input.phone) {
-        errors.phone = "Tu teléfono es requerido.";
-    } else if (!/^\d{10,15}$/.test(input.phone)) {
-        errors.phone = "Tu teléfono no es válido.";
-    }
+    // if(!input.phone) {
+    //     errors.phone = "Tu teléfono es requerido.";
+    // } else if (!/^\d{10,15}$/.test(input.phone)) {
+    //     errors.phone = "Tu teléfono no es válido.";
+    // }
     if(!input.country){
         errors.country = "El país es requerido.";
     } else if(/[.!@#$%^&*()_+-=]/.test(input.country)){
@@ -40,18 +40,19 @@ export default function Contact () {
     const [ input, setInput ] = useState({
         name: '',
         email: '',
-        phone: '',
+        // phone: '',
         country: '',
         message: ''
     });
 
-    const options = () => {
-        // console.log(internationalPhones)
-        return internationalPhones.map((e, index) => {
-          return <option key={index} value={e.value}>{e.value} {e.label}</option>;
-        });
-      };
-      console.log(input.phone)
+    // const options = () => {
+    //     console.log(internationalPhones)
+    //     return internationalPhones.map((e, index) => {
+    //       return <option key={index} value={e.value}>{e.value} {e.label}</option>;
+    //     });
+    // };
+    // console.log(input.phone);
+
     function handleChange(e) {
         setInput({
             ...input,
@@ -72,7 +73,7 @@ export default function Contact () {
             setInput({
                 name: '',
                 email: '',
-                phone: '',
+                // phone: '',
                 country: '',
                 message: ''
             });
@@ -97,7 +98,8 @@ export default function Contact () {
                             <input className={styles.input} type="email" name='email' value={ input.email } placeholder='Email' onChange={(e) => handleChange(e)} />
                             {errors.email && <p className="danger">{ errors.email }</p>}
                             <input className={styles.input} type="text" name='phone' value={ input.phone } placeholder='Teléfono' onChange={(e) => handleChange(e)} />
-                            <select
+                            
+                            {/* <select
                                 type="text"
                                 list="phones"
                                 name="phone"
@@ -107,8 +109,8 @@ export default function Contact () {
                                 >
                                 {options()}
                             </select>
+                            {errors.phone && <p className="danger">{ errors.phone }</p>} */}
 
-                            {errors.phone && <p className="danger">{ errors.phone }</p>}
                             <input className={styles.input} type="text" name='country' value={ input.country } placeholder='País' onChange={(e) => handleChange(e)} />
                             {errors.country && <p className="danger">{ errors.country }</p>}
                             <textarea className={styles.textarea} name="message" value={ input.message } placeholder='Comentarios' onChange={(e) => handleChange(e)} ></textarea>
@@ -116,7 +118,7 @@ export default function Contact () {
                             {
                                 !errors.name && input.name.length > 0 &&
                                 !errors.email && input.email.length > 0 &&
-                                !errors.phone && input.phone.length > 0 &&
+                                // !errors.phone && input.phone.length > 0 &&
                                 !errors.message && input.message.length > 0 ?
                                 <button className={styles.siteBtn} type="submit">ENVIAR</button> : <button className={styles.siteBtnDesaprobated} type="submit" disabled>ENVIAR</button>
                             }

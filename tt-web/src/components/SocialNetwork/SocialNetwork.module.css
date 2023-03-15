@@ -1,4 +1,4 @@
-.socialMedia {
+/* .socialMedia {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -8,7 +8,6 @@
 
 .socialMedia a {
     font-size: 40px;
-    /* color: #0d1b2a; */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -31,4 +30,22 @@
 }
 .pinterest:hover {
     color: #E60023;
+} */
+
+
+.socialNetworks {
+    height: 70px;
+    padding: 0 0 5px 0;
+    gap: 15px;
+}
+.borderSocialNetworks {
+    transition: 100ms all ease;
+}
+.borderSocialNetworks:hover {
+    transform: scale(1.1);
+}
+.iconSocialNetworks {
+    font-size: 30px;
+    color: white;
+
 }
