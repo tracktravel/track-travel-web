@@ -38,10 +38,10 @@ export default function NavBar() {
     <div className={styles.background}>
       <header className={styles.cabecera}>
         {/* Logo de la startup */}
-        <div className={styles.containerLogo}>
+        <Link href="/" className={styles.containerLogo}>
           <Image width={"auto"} height={50} src={logoTravel} alt="Logo" />
           <h1>Track Travel</h1>
-        </div>
+        </Link>
 
         <button onClick={toggleMenu} className={styles.cabeceraButton}>
           <GiHamburgerMenu className={styles.cabeceraSvg} />
