@@ -38,7 +38,7 @@ export default function Slider () {
                     slidesToShow={ 3 }
                     slidesToScroll={ 3 }
                 >
-                    {data.map((item) => (
+                    {data.map((item,) => (
                         <div className={`${styles.map} `}>
                                 <Image className={`${styles.imagen} `}  src={item.image} alt={item.alt}/>
                                 <Link key={item} className={` ${styles.text} linkComponent `} href={item.link} target='_blank' rel='noreferrer noopener'>

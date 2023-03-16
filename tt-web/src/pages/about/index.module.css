@@ -1,8 +1,30 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    margin-top: -2rem;
-    margin-bottom: -2.5rem;
+  /* height: 90vh; */
+}
+
+.hero {
+  margin-top: -1.5rem;
+  background-image: url("../../assets/about-bg-mobile.png");
+  height: 45vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-left: 2rem;
+  text-shadow: -1px 1px 1px #ff0000, -13px 4px 15px rgb(0, 0, 0);
+  /* text-shadow: -2px 2px 0 #ff0000, -7px 5px 0 #000000; */
+  color: rgb(255, 255, 255);
+  letter-spacing: 2.5px;
+
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    background-image: url("../../assets/about-bg.png");
+  }
 }
