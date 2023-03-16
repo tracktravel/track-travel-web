@@ -19,7 +19,7 @@ export default function Footer() {
                     <Stores />
                 </div>
 
-                <div className={`${styles.containerTwo} jcspaceBetween `}>
+                <div className={`${styles.containerTwo} jcspaceBetween`}>
                     <div className={`${styles.column} `}>
                         <h3>Track Travel</h3>
                         <Link href="/#">Nuestra historia</Link>
@@ -56,5 +56,5 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
