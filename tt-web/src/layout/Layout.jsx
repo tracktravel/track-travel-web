@@ -2,22 +2,17 @@ import React from "react";
 import NavBar from "@/components/NavBar/NavBar";
 import Footer from "@/components/Footer/Footer";
 import WhatsApp from "@/components/WhatsApp/WhatsApp";
-import BackTotopButton from "@/components/Scroll/BackTotopButton";
-import Contact from "@/components/Contact/Contact";
+import Scroll from "@/components/Scroll/Scroll";
 
 
 export default function Layout({children}) {
-  return (
-    <>
-      <div>
-        <NavBar />
-        <main>{children}</main>
-       
-        <WhatsApp />
-        <BackTotopButton />
-        {/* <Contact />[] */}
-        {/* <Footer/> */}
-      </div>
-    </>
-  );
-}
+    return (
+        <div>
+            <NavBar />
+            <WhatsApp />
+            <main>{children}</main>
+            <Scroll />
+            <Footer/>
+        </div>
+    );
+};

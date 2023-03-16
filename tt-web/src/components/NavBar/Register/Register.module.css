@@ -1,0 +1,13 @@
+.register {
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: #e9ecef;
+    padding: 5px 10px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+.register a {
+    text-decoration: none;
+    color: gray;            
+}

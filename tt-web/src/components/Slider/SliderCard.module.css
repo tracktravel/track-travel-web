@@ -1,0 +1,121 @@
+.slider {
+    position: relative;
+    width: 950px;
+    margin: 0 auto;
+    padding: 35px 0 0 0;
+}
+.container__buttons {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    right: 16px;
+    top: 280px;
+    margin: 0 auto;
+}
+/*Botones de Next y Prev*/
+.buttons {
+    background: orangered;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 300ms all ease;
+}
+.buttons:hover {
+    transform: scale(1.05);
+}
+.h3 {
+    letter-spacing: 2px;
+}
+.btnGrad {
+    background-image: linear-gradient(to right, #2C3E50 0%, #4CA1AF  51%, #2C3E50  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    letter-spacing: 2px;
+}
+.btnGrad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Contenedor del Slider*/
+.container__slider {
+    overflow: hidden;
+    width: 900px;
+    height: 373px;
+    margin: 20px auto;
+}
+
+/*Indicadores de la lista, secciones del Slider que no se ven*/
+.lineIndicator li {
+    height: 4px;
+    width: 70px;
+    background: lightgray;
+    border-radius: 5px;
+}
+.lineIndicator li:hover {
+    background: gray;
+}
+
+/*Indicador de abajo*/
+.lineIndicator li.slickActive {
+    background: blue;
+}
+
+.map {
+    position: relative;
+    color: white;
+    width: 280px;
+    height: 373px;
+    overflow: hidden;
+    gap: 10px;
+}
+.map::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 280px;
+    height: 373px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,  rgba(0, 0, 0, 0.5) 100%);
+}
+
+/*Contanedor de mapeo de imágenes*/
+.imagen {
+    width: 280px;
+    height: 373px;
+    margin:  0 auto;
+    border-radius: 10px;
+}
+.textCarousel{
+    position: absolute;
+    bottom: 20px;
+    padding: 5px;
+    width: 100%;
+}
+.textCarousel h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #f8f9fa;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+.textCarousel h2:hover {
+    color: #83c5be;
+}
+.text__final {
+    margin: 0 0 50px 0;
+}

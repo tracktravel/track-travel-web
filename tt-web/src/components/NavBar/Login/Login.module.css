@@ -1,0 +1,12 @@
+.login {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+.login a {
+    color: white;
+    text-decoration: none;
+}
