@@ -12,6 +12,12 @@
   --bg-color: #F7F5F5;
 }
 
+/* Typography */
+@font-face {
+  font-family: 'Nexa-Heavy';
+  src: url('../fonts/Nexa-Heavy.ttf')
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,8 +59,8 @@ main {
     */
 
 h1 {
+  font-family: 'Nexa-Heavy';
   font-size: 1.75em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
