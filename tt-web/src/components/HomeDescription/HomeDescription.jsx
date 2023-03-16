@@ -4,6 +4,7 @@ import { GiGears } from "react-icons/gi";
 import { FaHandshake } from "react-icons/fa";
 import styles from "./HomeDescription.module.css";
 
+
 const HomeDescription = () => {
   return (
     <div className={styles.container} id='home-description'>
