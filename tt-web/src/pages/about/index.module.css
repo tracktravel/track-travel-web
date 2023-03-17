@@ -1,8 +1,58 @@
 .container {
+  /* height: 90vh; */
+}
+
+.about {
+  margin-top: -1.5rem;
+  background-image: url("../../assets/about-bg-mobile.png");
+  height: 45vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-left: 5rem;
+  text-shadow: -1px 1px 1px #ff0000, -13px 4px 15px rgb(0, 0, 0);
+  /* text-shadow: -2px 2px 0 #ff0000, -7px 5px 0 #000000; */
+  color: rgb(255, 255, 255);
+  letter-spacing: 2.5px;
+}
+
+.p1 {
+  display: flex;
+  padding: 2rem;
+}
+
+.p1 div h1 {
+  margin-bottom: 0.5rem;
+}
+
+.p1Image {
+  display: none;
+  width: auto;
+  height: 12rem;
+  margin-right: 2rem;
+}
+
+.p2Image {
+  display: none;
+  width: auto;
+  height: 12rem;
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    background-image: url("../../assets/about-bg.png");
+  }
+  .p1Image, .p2Image{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    margin-top: -2rem;
-    margin-bottom: -2.5rem;
+    width: auto;
+    height: 12rem;
+  }
 }

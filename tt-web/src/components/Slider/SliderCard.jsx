@@ -38,10 +38,10 @@ export default function Slider () {
                     slidesToShow={ 3 }
                     slidesToScroll={ 3 }
                 >
-                    {data.map((item) => (
-                        <div className={`${styles.map} `}>
+                    {data.map((item,) => ( // esta mal puesto el key deberia ir en el div padre, arroja un warning en la key
+                        <div key={item} className={`${styles.map} `}>
                                 <Image className={`${styles.imagen} `}  src={item.image} alt={item.alt}/>
-                                <Link key={item} className={` ${styles.text} linkComponent `} href={item.link} target='_blank' rel='noreferrer noopener'>
+                                <Link className={` ${styles.text} linkComponent `} href={item.link} target='_blank' rel='noreferrer noopener'>
                                 <div className={`${styles.textCarousel} `}>
                                     <h2>{item.title}</h2>
                                 </div>

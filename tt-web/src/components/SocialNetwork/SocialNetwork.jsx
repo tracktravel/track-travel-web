@@ -13,15 +13,15 @@ export default function SocialNetwor () {
         <div className={`${styles.borderSocialNetworks} center`}>
             <a className={`links`} href='https://www.instagram.com' target="_blank" rel="noreferrer noopener"><AiFillInstagram className={styles.iconSocialNetworks} /></a>
         </div>
-        <div className={`${styles.borderSocialNetworks} center`}>
+        {/* <div className={`${styles.borderSocialNetworks} center`}>
             <a className={`links`} href='https://www.youtube.com' target="_blank" rel="noreferrer noopener"><AiFillYoutube className={styles.iconSocialNetworks} /></a>
-        </div>
+        </div> */}
         <div className={`${styles.borderSocialNetworks} center`}>
             <a className={`links`} href='https://www.linkedin.com/company/track-travel/' target="_blank" rel="noreferrer noopener"><FaLinkedinIn className={styles.iconSocialNetworks} /></a>
         </div>
-        <div className={`${styles.borderSocialNetworks} center`}>
+        {/* <div className={`${styles.borderSocialNetworks} center`}>
           <a href="https://github.com/tracktravel" target="_blank" rel="noreferrer noopener"><FaGithub className={styles.iconSocialNetworks} /></a>
-        </div>
+        </div> */}
     </div>
     );
 };

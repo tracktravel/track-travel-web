@@ -71,7 +71,7 @@
 
 
 /*---------Responsive---------*/
-@media screen and (max-width: 1027px){
+@media screen and (max-width: 1000px){
   .cabeceraButton {
       display: flex;
   }
