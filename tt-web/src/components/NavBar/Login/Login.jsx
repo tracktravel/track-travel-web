@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaRegUser } from 'react-icons/fa';
 import styles from "./Login.module.css";
@@ -7,9 +8,9 @@ export default function Login () {
 
     return (
         <div className={`${styles.login}`}>
-            <a href="/#">
+            <Link href="/#">
                 <FaRegUser /> INICIAR SESION
-            </a>
+            </Link>
         </div>
     );
 };

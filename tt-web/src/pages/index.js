@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/index.module.css';
 // import Solutions from '@/components/Solutions/Solutions';
-import Hero from '@/components/Hero/Hero';
+import Hero from '@/components/hero/Hero';
 import HomeDescription from '@/components/HomeDescription/HomeDescription';
 import SliderCard from "@/components/Slider/SliderCard";
 
