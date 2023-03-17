@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from "next/link";
-import SocialNetwork from "@/components/SocialNetwork/SocialNetwork";
-import Logo from "@/components/Logo/Logo";
-import Stores from "../Stores/Stores";
+import SocialNetwork from "@/components/socialNetwork/SocialNetwork";
+import Logo from "@/components/logo/Logo";
+import Stores from "../stores/Stores";
 import { BsFillTelephoneFill, BsFileTextFill, BsHeadset } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { RiWhatsappFill } from 'react-icons/ri';
