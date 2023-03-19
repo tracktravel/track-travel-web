@@ -1,8 +1,9 @@
-.container {
-  /* height: 90vh; */
+.about {
+  
 }
 
-.about {
+
+.about__title {
   margin-top: -1.5rem;
   background-image: url("../../assets/about-bg-mobile.png");
   height: 45vh;

@@ -25,7 +25,7 @@ export default function Slider () {
             
             <h3 className={`${styles.h3}  `}>SIEMPRE TENDRAS EL CONTROL</h3>
             <div className={`jcspaceBetween`}>
-                <p>No importa el lugar, seremos tu respealdo inteligente donde quiera que vayas</p>
+                <p>No importa el lugar, seremos tu respaldo inteligente donde quiera que vayas</p>
                 <button className={`${styles.btnGrad} `}>VER TODOS NUESTROS ALIADOS</button>
             </div>
 

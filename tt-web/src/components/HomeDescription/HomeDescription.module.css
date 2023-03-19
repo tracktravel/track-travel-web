@@ -8,7 +8,6 @@
   line-height: 1.75rem;
   font-size: large;
 }
-
 .titleContainer {
   display: flex;
   flex-direction: column;
@@ -18,18 +17,12 @@
   margin: 0 auto;
   font-size: large;
 }
-
-/* .title {
-  font-size: 2rem;
-} */
-
 .items {
     display: flex;
     height: 2.4rem;
     width: auto;
     color: var(--main-color);
 }
-
 .cards{
   display: flex;
   justify-content: center;
