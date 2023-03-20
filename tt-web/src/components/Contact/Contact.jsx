@@ -57,12 +57,14 @@ export default function Contact () {
             [e.target.name] : e.target.value
         }));
     };
-
-
+//info.tracktravel@gmail.com
+//template_6n80qlr
+//service_7ey5d8n
+//bXuut_Ev3bYLdSLcm
     function handleSubmit(e) {
         e.preventDefault();
         emailjs
-        .sendForm('service_zfg4l7e', 'template_kypswm8', e.target, 'zXTg4GsN07LSJ9aKf')
+        .sendForm('service_7ey5d8n', 'template_6n80qlr', e.target, 'bXuut_Ev3bYLdSLcm')
         .then(() => {
             setInput({
                 name: '',
@@ -95,11 +97,11 @@ export default function Contact () {
                         </div>
                         <div className={`${styles.section} `}>
                             <BsWhatsapp className={`${styles.icon} `}/>
-                            <p>WhatsApp</p>
+                            <p>+55 21994046975</p>
                         </div>
                         <div className={`${styles.section} `}>
                             <MdEmail className={`${styles.icon} `}/>
-                            <p>tracktravel@gmail.com</p>
+                            <p>info.tracktravel@gmail.com</p>
                         </div>
                         <div className={`${styles.section} `}>
                             <FaMapMarkerAlt className={`${styles.icon} `}/>
