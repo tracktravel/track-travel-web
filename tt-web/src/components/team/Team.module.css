@@ -40,7 +40,8 @@
   flex: 1;
 }
 .container__card_info_data >h1{
-  line-height: 1.3em
+  line-height: 1.3em;
+  margin-bottom: 15px;
 }
 
 .container__card_info_data > h2 {
