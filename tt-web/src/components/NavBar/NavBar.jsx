@@ -4,9 +4,15 @@ import Image from "next/image";
 import Logo from "@/components/logo/Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./NavBar.module.css";
+import { useRouter } from "next/router";
+
+//Change the way the links highlight instead of using state and function
 
 export default function NavBar() {
-  const [activeSection, setActiveSection] = useState("aboutMe");
+  const router = useRouter()
+  const currentRoute = router.pathname
+
+  // const [activeSection, setActiveSection] = useState("aboutMe");
   const [menu, setMenu] = useState(false);
 
   useEffect(() => {
@@ -25,10 +31,10 @@ export default function NavBar() {
     });
   }
 
-  function handleSectionClick(sectionName) {
-    setActiveSection(sectionName);
-    setMenu(false);
-  }
+  // function handleSectionClick(route) {
+  //   setActiveSection(route);
+  //   setMenu(false);
+  // }
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -37,7 +43,9 @@ export default function NavBar() {
   return (
     <div className={styles.background}>
       <header className={styles.cabecera}>
-      <div><Logo /></div>
+        <div>
+          <Logo />
+        </div>
 
         <button onClick={toggleMenu} className={styles.cabeceraButton}>
           <GiHamburgerMenu className={styles.cabeceraSvg} />
@@ -47,39 +55,39 @@ export default function NavBar() {
           <ul className={styles.cabeceraUl}>
             <li
               className={`${styles.cabeceraLi} ${
-                activeSection === "home" ? styles.cabeceraLiActive : ""
+                currentRoute === "/" ? styles.cabeceraLiActive : ""
               }`}
             >
               <Link
                 className={styles.cabeceraA}
                 href="/"
-                onClick={() => handleSectionClick("home")}
+                // onClick={() => handleSectionClick("/")}
               >
                 Home
               </Link>
             </li>
             <li
               className={`${styles.cabeceraLi} ${
-                activeSection === "about" ? styles.cabeceraLiActive : ""
+                currentRoute === "/about" ? styles.cabeceraLiActive : ""
               }`}
             >
               <Link
                 className={styles.cabeceraA}
                 href="/about"
-                onClick={() => handleSectionClick("about")}
+                // onClick={() => handleSectionClick("/about")}
               >
                 About
               </Link>
             </li>
             <li
               className={`${styles.cabeceraLi} ${
-                activeSection === "contact" ? styles.cabeceraLiActive : ""
+                currentRoute === "/contact" ? styles.cabeceraLiActive : ""
               }`}
             >
               <Link
                 className={styles.cabeceraA}
                 href="/contact"
-                onClick={() => handleSectionClick("contact")}
+                // onClick={() => handleSectionClick("/contact")}
               >
                 Contact
               </Link>
