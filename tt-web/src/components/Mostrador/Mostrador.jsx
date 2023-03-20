@@ -12,21 +12,21 @@ export default function Mostrador () {
             <h1>Viaja con confianza, nuestras agencias aliadas están presentes en más de 150 países</h1>
             <div className={`${styles.card__container} center`}>
                 <div className={`${styles.card} `}>
-                    <Image className={`${styles.image}`} src={Image1} alt="" />
+                    <Image className={`${styles.image}`} src={Image1} alt="Colombia" />
                     <div className={`${styles.text} `}>
                         <h3>Colombia</h3>
                         <p>Valle del Cocora</p>
                     </div>
                 </div>
                 <div className={`${styles.card} `}>
-                    <Image className={`${styles.image}`} src={Image2} alt="" />
+                    <Image className={`${styles.image}`} src={Image2} alt="Republica Dominicana" />
                     <div className={`${styles.text} `}>
                         <h3>República Dominicana</h3>
                         <p>Samaná</p>
                     </div>
                 </div>
                 <div className={`${styles.card} `}>
-                    <Image className={`${styles.image}`} src={Image3} alt="" />
+                    <Image className={`${styles.image}`} src={Image3} alt="Emiratos Arabes Unidos" />
                     <div className={`${styles.text} `}>
                         <h3>Emiratos Árabes Unidos</h3>
                         <p>Dubái</p>
