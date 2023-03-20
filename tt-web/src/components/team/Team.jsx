@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Team.module.css";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import SocialNetwork from "../socialNetwork/SocialNetwork";
 
 const team = [
   {
@@ -92,13 +94,13 @@ const team = [
   },
   {
     name: "Luis Carlos Rangel Lagunes",
-    rol: "Backend",
+    rol: "Full Stack",
     linkedin: "https://www.linkedin.com/in/luisrangel-lagunes/",
     github: "https://github.com/luisillo619",
     image: "/team/luiscarlos.jpg",
   },
 ];
-
+//
 const Team = () => {
   return (
     <div className={styles.container}>
@@ -109,13 +111,21 @@ const Team = () => {
             width={200}
             height={300}
             src={person.image}
-            alt="Foto de nosotros"
+            alt={person.name}
           />
           <div className={styles.container__card_info}>
-            <h1>{person.name}</h1>
-            <h2>{person.rol}</h2>
-            <p>Linkedin: {person.linkedin}</p>
-            <p>Github: {person.github}</p>
+            <div className={styles.container__card_info_data}>
+              <h1>{person.name}</h1>
+              <h2>{person.rol}</h2>
+            </div>
+
+            <div className={styles.container__card_info_socialNetwork}>
+              <SocialNetwork
+                team={true}
+                gitHub={person.github}
+                linkedin={person.linkedin}
+              />
+            </div>
           </div>
         </div>
       ))}
