@@ -11,7 +11,32 @@ import styles from "./SliderCard.module.css";
 
 export default function Slider () {
     const sliderRef = useRef(null);
-
+    // const settings = {
+    //     dots: true,
+    //     adaptiveHeight: true,
+    //     dotsClass: "slickDots lineIndicator",
+    //     customPaging: (i) => (
+    //       <div style={{ position: "absolute", top: "-10px", opacity: 0 }}>{i}</div>
+    //     ),
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     responsive: [
+    //       {
+    //         breakpoint: 1024,
+    //         settings: {
+    //           slidesToShow: 2,
+    //           slidesToScroll: 2,
+    //         },
+    //       },
+    //       {
+    //         breakpoint: 768,
+    //         settings: {
+    //           slidesToShow: 1,
+    //           slidesToScroll: 1,
+    //         },
+    //       },
+    //     ],
+    //   };
     return (
         <div className={`${styles.slider} `}>
             <div className={`${styles.container__buttons}`}>
@@ -31,6 +56,7 @@ export default function Slider () {
 
             <div className={`${styles.container__slider}`}>
                 <SliderC
+                //    {...settings}
                     dots
                     dotsClass="slickDots lineIndicator"
                     customPaging={ (i) => ( <div style={{ position: "absolute", top: "-10px", opacity: 0 }} >{i}</div> )}
