@@ -18,8 +18,9 @@
 }
 
 .button {
-  
-  padding: 0.5rem 0.8rem;
+  font-size: 15px;
+  font-weight: bold;
+  padding: .8rem 2rem;
   border: 2px solid #dd302c;
   border-radius: 8px;
   color: var(--main-color);
