@@ -4,8 +4,10 @@
     height: 400px;
     padding: 0 30px;
     margin: 30px 0 0 0;
+    
 }
 .containerOne {
+    
     border-bottom: 1px solid #343a40;
     padding: 30px 0;
     margin-bottom: 30px;
@@ -36,6 +38,7 @@
 }
 .textFinal {
     color: #dcdcdd;
+    margin-right: 45px;
 }
 .marca {
     font-weight: bold;
