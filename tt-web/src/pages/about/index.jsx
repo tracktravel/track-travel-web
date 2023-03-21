@@ -5,7 +5,9 @@ import aboutImg2 from '../../assets/about2.png'
 import Image from 'next/image';
 import Team from '@/components/team/Team';
 
-const About = () => {
+//warnings en el componente Team debido a las imágenes. recomienda usar o width o heigth auto para mantener el aspect ratio
+
+const About = () => { 
   return (
     <div className={styles.container}>
       <div className={styles.about}>
