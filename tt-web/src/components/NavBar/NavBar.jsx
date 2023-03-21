@@ -25,9 +25,9 @@ export default function NavBar() {
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
-        setActiveSection(section.getAttribute("id"));
-      }
+      // if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+      //   setActiveSection(section.getAttribute("id"));
+      // }
     });
   }
 
