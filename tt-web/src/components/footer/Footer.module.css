@@ -5,7 +5,7 @@
 .footer{
     width: 100%;
     background: #272727;
-    height: 400px;
+    /* height: 400px; */
     padding: 0 30px;
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -17,19 +17,19 @@
 }
 
 .containerTwo {
-    height: 150px;
+    align-items: flex-start;
+    gap: 1rem;
     width: 100%;
     color: #dcdcdd;
 }
 .column {
-    height: 100%;
     width: 250px;
     color: #dcdcdd;
-
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    gap: .25rem;
 }
 .column a {
     text-decoration: none;
@@ -37,15 +37,26 @@
     font-size: 14px;
 }
 .column a:hover {
-    color: teal;
+    color: var(--main-color);
 }
 .textFinal {
-    color: #dcdcdd;
     margin-right: 45px;
+    padding: 1.5rem 0;
+    color: #dcdcdd;
 }
 .marca {
     font-weight: bold;
 }
 .marca:hover {
     color: teal;
+}
+
+@media screen and (max-width: 760px) {
+    .containerOne {
+        flex-direction: column;
+        gap: .75rem;
+    }
+    .containerTwo {
+        flex-wrap: wrap;
+    }
 }

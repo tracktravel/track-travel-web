@@ -422,7 +422,7 @@ code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', mon
 }
 .block__container {
     width: 100%;
-    margin: 0 auto 30px auto;
+    /* margin: 0 auto 30px auto; */
 }
 .block__containerOurWork {
     width: 1200px;
