@@ -43,12 +43,18 @@
 }
 .borderSocialNetworks:hover {
     transform: scale(1.1);
+    background-color: ;
 }
 .iconSocialNetworks {
     font-size: 30px;
     color: white;
 
 }
+
+.iconSocialNetworks:hover {
+    color:#dd302c;
+}
+
 .iconSocialNetworksBlack{
     font-size: 30px;
     color: rgb(6, 6, 6);
