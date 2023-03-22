@@ -116,7 +116,7 @@ const Team = () => {
         <div key={index} className={styles.container__card}>
           <Image
             className={styles.container__image}
-            width={100}
+            width={200}
             height={200}
             src={person.image}
             alt={person.name}
