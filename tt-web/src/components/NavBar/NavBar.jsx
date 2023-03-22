@@ -15,21 +15,21 @@ export default function NavBar() {
   // const [activeSection, setActiveSection] = useState("aboutMe");
   const [menu, setMenu] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll" /*handleScroll */);
+  //   return () => window.removeEventListener("scroll");
+  // }, []);
 
-  function handleScroll() {
-    const sections = document.querySelectorAll("section");
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
-        setActiveSection(section.getAttribute("id"));
-      }
-    });
-  }
+  // function handleScroll() {
+  //   const sections = document.querySelectorAll("section");
+  //   sections.forEach((section) => {
+  //     const sectionTop = section.offsetTop;
+  //     const sectionHeight = section.clientHeight;
+  //     if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+  //       setActiveSection(section.getAttribute("id"));
+  //     }
+  //   });
+  // }
 
   // function handleSectionClick(route) {
   //   setActiveSection(route);
