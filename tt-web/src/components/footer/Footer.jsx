@@ -30,7 +30,7 @@ export default function Footer() {
                     </div>
                     <div className={`${styles.column} `}>
                         <h3>Legal</h3>
-                        <Link href="/#">Términos y condiciones</Link>
+                        <Link href="/legales">Términos y condiciones</Link>
                         <Link href="/#">Aviso de privacidad</Link>
                         <Link href="/#">Avisos legales</Link>
                         {/* <Link href="/#">Artículos de prensa</Link> */}
