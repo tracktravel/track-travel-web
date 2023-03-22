@@ -52,7 +52,7 @@
 }
 
 .iconSocialNetworks:hover {
-    color:#dd302c;
+    color: var(--main-color);
 }
 
 .iconSocialNetworksBlack{
