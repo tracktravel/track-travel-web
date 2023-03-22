@@ -1,8 +1,8 @@
 .container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-evenly;
+  gap: 5rem;
   padding: 1rem;
 }
 
@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 20rem;
+  max-width: 15rem;
   width: 20rem;
   border-radius: 5px;
   box-shadow: -6px 9px 18px 3px rgba(0,0,0,0.42);
@@ -35,16 +35,19 @@
   height: 100%;
   
 }
+
 .container__card_info_data{
   flex: 1;
 }
 .container__card_info_data >h1{
   line-height: 1.3em;
+  font-size: 1.3em;
   margin-bottom: 15px;
 }
 
 .container__card_info_data > h2 {
   color: #605e5ed0;
+  font-size: 1.1em;
   letter-spacing: 0.1em;
 }
 
