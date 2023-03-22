@@ -11,7 +11,7 @@ export default function SocialNetwork ({team,gitHub,linkedin}) {
             <a className={`links`} href='https://www.facebook.com' target="_blank" rel="noreferrer noopener"><FaFacebookF className={styles.iconSocialNetworks} /></a>
         </div>: null}  
        {!team ? <div className={`${styles.borderSocialNetworks} center`}>
-            <a className={`links`} href='https://www.instagram.com' target="_blank" rel="noreferrer noopener"><AiFillInstagram className={styles.iconSocialNetworks} /></a>
+            <a className={`links`} href='https://www.instagram.com/track.travel.app/' target="_blank" rel="noreferrer noopener"><AiFillInstagram className={styles.iconSocialNetworks} /></a>
         </div>: null} 
         {/* <div className={`${styles.borderSocialNetworks} center`}>
             <a className={`links`} href='https://www.youtube.com' target="_blank" rel="noreferrer noopener"><AiFillYoutube className={styles.iconSocialNetworks} /></a>

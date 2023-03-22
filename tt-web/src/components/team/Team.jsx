@@ -99,6 +99,14 @@ const team = [
     github: "https://github.com/luisillo619",
     image: "/team/luiscarlos.jpg",
   },
+  {
+    name: "Juan Cruz Laumann",
+    rol: "Frontend",
+    linkedin: "https://www.linkedin.com/in/juan-cruz-laumann-7775a3238/",
+    github: "https://github.com/JuanCruzL",
+    image: "/team/juan1.png",
+  },
+
 ];
 //
 const Team = () => {
