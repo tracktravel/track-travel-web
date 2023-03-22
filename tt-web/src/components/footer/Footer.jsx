@@ -10,6 +10,7 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
+    <div className={styles.background}>
     <div className={`${styles.footer} centerComlumn `}>
       <div className={`${styles.container}  block__container `}>
         <div className={`${styles.containerOne} marginCenter jcspaceBetween`}>
@@ -71,6 +72,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
