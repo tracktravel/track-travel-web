@@ -15,7 +15,9 @@
 }
 /*Botones de Next y Prev*/
 .buttons {
-    background: orangered;
+    position: relative;
+    top: 60px;
+    background: var(--main-color);
     color: white;
     width: 40px;
     height: 40px;
