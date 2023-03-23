@@ -18,17 +18,24 @@
 .one {
     gap: 10px;
 }
-.one h3 {
+.one .subtitle {
     color: #dd302c;
     letter-spacing: 2px;
 }
-.one h1 {
+.one .title {
     margin: 0 0 15px 0;
+}
+.title{
+    font-size: 20px;
+}
+.subtitle{
+    font-size: 15px;
+    margin-bottom: 1rem;
 }
 .section {
     display: flex;
     height: 50px;
-    width: 330px;
+    max-width: 330px;
     border-radius: 5px;
     padding: 15px;
     margin: 0 0 10px 0;
@@ -39,9 +46,8 @@
     border: 1px solid #dd302c;
 }
 .form {
-   
-  
-    width: 350px;
+
+    max-width: 350px;
     height: 100%;
     border-radius: 10px;
     background: #dee2e6;
@@ -124,7 +130,7 @@
         display: none;
     }
 }
-
+/*---------------(720px)---------------*/
 @media screen and (max-width:730px){
     .container{
         /* border: 2px solid green; */
@@ -143,32 +149,54 @@
     }
    
 }
-/*---------------(900px)---------------*/
+/*---------------(500px)---------------*/
 @media screen and (max-width: 500px) {
     .containerDosContactUs {
         width: 350px;
     }
     .form .input {
-        width: 290px;
+        width: 270px;
     }
     .form .textarea {
-        width: 290px;
+        width: 270px;
     }
     
 }
 
-/*---------------(900px)---------------*/
+/*---------------(420px)---------------*/
 @media screen and (max-width: 420px) {
     .containerDosContactUs {
-        width: 300px;
+        width: 250px;
     }
     .form .input {
-        width: 250px;
+        width: 200px;
+        font-size: small;
     }
     .form .textarea {
-        width: 250px;
+        width: 200px;
+        font-size: small;
     }
     .danger {
-        margin: -30px 0 0 65px;
+        margin: -1rem 0 0 0;
+        font-size: small;
+    }
+    .dangerTextarea{
+        font-size: small;
+    }
+    .one{
+        font-size: small;
+        width: 100%;
+        margin-left: 2rem;
+    }
+    .section{
+        width: 90%;
+        align-items: center;
+        
+    }
+    .title{
+        font-size: 18px;
+    }
+    .subtitle{
+        font-size: 13px;
     }
 }
