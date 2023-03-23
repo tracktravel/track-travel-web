@@ -41,7 +41,7 @@
     margin: 0 auto;
 }
 .btnGrad {
-    background-image: linear-gradient(to right, #2C3E50 0%, #4CA1AF  51%, #2C3E50  100%);
+    background-image: linear-gradient(to right, #dd302c  0%, #d46462    51%, #dd302c   100%);
     margin: 2%;
     padding: 15px 45px;
     text-align: center;
