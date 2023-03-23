@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 460px;
+    top: 55%;
     margin: 0 auto;
 }
 /*Botones de Next y Prev*/
@@ -148,3 +148,5 @@
       
     }
 }
+
+
