@@ -87,8 +87,8 @@ export default function Contact () {
             <div className={`${styles.container} center `}>
 
                 <div className={`${styles.one} `}>
-                    <h3>CONTACTO</h3>
-                    <h1>Queremos escucharte</h1>
+                    <p className={`${styles.title} `} >CONTACTO</p>
+                    <p className={`${styles.subtitle} `} >Queremos escucharte</p>
 
                     <div className={` `}>
                         <div className={`${styles.section} `}>
@@ -113,13 +113,13 @@ export default function Contact () {
                 <div className={`${styles.two} centerColumn `}>
                     <form className={`${styles.form} centerColumnP`} onSubmit={(e) => handleSubmit(e)}>
                         <div className={` centerColumnP `}>
-                            <label htmlFor="name">Nombre</label>
+                            {/* <label htmlFor="name">Nombre</label> */}
                             <input className={styles.input} type="text" name='name' value={ input.name } placeholder='Nombre completo' onChange={(e) => handleChange(e)} />
                             {errors.name && <p className={`${styles.danger}`}>{ errors.name }</p>}
                         </div>
 
                         <div className={` centerColumnP`}>
-                            <label htmlFor="email">Email</label>
+                            {/* <label htmlFor="email">Email</label> */}
                             <input className={styles.input} type="email" name='email' value={ input.email } placeholder='Email' onChange={(e) => handleChange(e)} />
                             {errors.email && <p className={`${styles.danger}`}>{ errors.email }</p>}
                         </div>
@@ -137,7 +137,7 @@ export default function Contact () {
                         </div> */}
 
                         <div className={` centerColumnP`}>
-                            <label htmlFor="message">Mensaje</label>
+                            {/* <label htmlFor="message">Mensaje</label> */}
                             <textarea className={styles.textarea} name="message" value={ input.message } placeholder='Comentarios' onChange={(e) => handleChange(e)} ></textarea>
                             {errors.message && <p className={`${styles.dangerTextarea}`}>{ errors.message }</p>}
                         </div>
