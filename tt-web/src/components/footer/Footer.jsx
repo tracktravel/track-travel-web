@@ -16,7 +16,10 @@ export default function Footer() {
         <div className={`${styles.containerOne} marginCenter jcspaceBetween`}>
           <SocialNetwork />
           <Logo />
-          <Stores />
+          <div className={styles.storesContainer}>
+            <Stores />
+
+          </div>
         </div>
 
         <div className={`${styles.containerTwo} jcspaceBetween`}>

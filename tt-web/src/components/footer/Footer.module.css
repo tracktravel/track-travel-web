@@ -60,3 +60,9 @@
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .footer {
+        padding-top: 20px;
+    }
+}

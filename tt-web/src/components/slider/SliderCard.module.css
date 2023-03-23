@@ -10,13 +10,12 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 45%;
+    top: 460px;
     margin: 0 auto;
 }
 /*Botones de Next y Prev*/
 .buttons {
     position: relative;
-    top: 60px;
     background: var(--main-color);
     color: white;
     width: 40px;
