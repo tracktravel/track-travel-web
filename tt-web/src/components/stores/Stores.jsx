@@ -8,7 +8,7 @@ import styles from "./Stores.module.css";
 
 export default function Stores () {
     return (
-        <div className={`${styles.stores} flex `}>
+        <div className={styles.stores}>
 
             <Link href="/#">
                 <div className={`${styles.store} center `}>
