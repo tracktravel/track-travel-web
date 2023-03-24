@@ -25,9 +25,9 @@
   border-radius: 8px;
   color: var(--main-color);
   background-color: inherit;
-  -webkit-box-shadow: 9px 9px 15px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 9px 9px 15px -3px rgba(0,0,0,0.75);
-  box-shadow: 9px 9px 15px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 9px 9px 15px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 15px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 9px 15px -3px rgba(0, 0, 0, 0.75);
 }
 
 .button:hover {
@@ -53,10 +53,12 @@
   .container {
     height: calc(100vh - 101px);
   }
+
   .image {
     width: 500px;
     height: 500px;
   }
+
   .title {
     font-size: 2.2rem
   }

@@ -14,7 +14,6 @@ import image13 from "../../assets/Slider/Medellin.jpg";
 import image14 from "../../assets/Slider/Mexico.jpg";
 import image15 from "../../assets/Slider/Samaná.jpg";
 
-
 export const data = [
     {
         image: image1,
@@ -92,13 +91,3 @@ export const data = [
         link: 'https://translate.google.com/?hl=es'
     }
 ];
-
-
-
-
-
-
-
-
-
-// export const data = [ image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15 ];

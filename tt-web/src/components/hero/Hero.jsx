@@ -5,7 +5,6 @@ import heroImage from "../../assets/hero-image.png";
 import styles from "./Hero.module.css";
 import handleScroll from '@/helpers/HandleScroll';
 
-
 const Hero = () => {
   return (
     <div className={styles.container}>

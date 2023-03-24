@@ -5,11 +5,9 @@ import AppStore from '../../assets/AppStore.svg';
 import PlayStore from '../../assets/PlayStore.svg';
 import styles from "./Stores.module.css";
 
-
-export default function Stores () {
+export default function Stores() {
     return (
         <div className={styles.stores}>
-
             <Link href="/#">
                 <div className={`${styles.store} center `}>
                     <Image src={AppStore} alt="Apple" />
@@ -20,7 +18,6 @@ export default function Stores () {
                     <Image src={PlayStore} alt="Google" />
                 </div>
             </Link>
-
         </div>
     )
 }

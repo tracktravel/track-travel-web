@@ -1,49 +1,17 @@
-/* .socialMedia {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    animation: spanHeroSMB 2000ms;
-    margin-top: 1rem;
-}
-
-.socialMedia a {
-    font-size: 40px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all ease 300ms;
-}
-
-.socialMedia a:hover {
-    transform: scale(1.3);
-}
-
-.linkedin:hover {
-    color: #0e76a8;
-}
-.codepen:hover {
-    color: #6495Ed;
-}
-.github:hover {
-    color: #c9510c;
-}
-.pinterest:hover {
-    color: #E60023;
-} */
-
-
 .socialNetworks {
     height: 50px;
     padding: 0 0 5px 0;
     gap: 15px;
 }
+
 .borderSocialNetworks {
     transition: 100ms all ease;
 }
+
 .borderSocialNetworks:hover {
     transform: scale(1.1);
 }
+
 .iconSocialNetworks {
     font-size: 30px;
     color: white;
@@ -53,7 +21,7 @@
     color: var(--main-color);
 }
 
-.iconSocialNetworksBlack{
+.iconSocialNetworksBlack {
     font-size: 30px;
     color: rgb(6, 6, 6);
 }

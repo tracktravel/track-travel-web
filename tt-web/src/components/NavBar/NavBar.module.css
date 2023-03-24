@@ -3,7 +3,6 @@
   z-index: 1;
   width: 100%;
   min-height: 90px;
-  /* background: linear-gradient(rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.9)); */
   background: #272727;
   padding: 1em;
   display: flex;
@@ -11,7 +10,7 @@
   justify-content: space-around;
   align-items: center;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);  
+  clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
 }
 
 .background {
@@ -25,17 +24,18 @@
   cursor: pointer;
   background: transparent;
 }
+
 .cabeceraSvg {
   color: white;
   font-size: 2rem;
   transition: 300ms all ease;
 }
+
 .cabeceraSvg:hover {
   transform: scale(1.1);
 }
 
 /*--------------- Container Logo ---------------*/
-
 .containerLogo {
   display: flex;
   justify-content: space-around;
@@ -50,6 +50,7 @@
   justify-content: center;
   padding: 0;
 }
+
 .cabeceraUl {
   display: flex;
   flex-flow: row nowrap;
@@ -57,45 +58,52 @@
   align-items: center;
   list-style: none;
 }
+
 .cabeceraLi {
   margin: 0 .5em;
   list-style: none;
 }
+
 .cabeceraLiActive {
   background: #e63946;
   padding: .5rem;
   border-radius: 0.4rem;
 }
+
 .cabeceraA {
   padding: 10px;
 }
 
 
 /*---------Responsive---------*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .cabeceraButton {
-      display: flex;
+    display: flex;
   }
+
   .cabeceraNav {
-      width: 100%;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      height: 0vh;
-      opacity: 0;
-      overflow: hidden;
-      transition: all .5s ease;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease;
   }
+
   .cabeceraNav.isActive {
-      height: 23vh;
-      opacity: 1;
+    height: 23vh;
+    opacity: 1;
   }
+
   .cabeceraUl {
-      margin-top: -3rem;
-      flex-direction: column;
+    margin-top: -3rem;
+    flex-direction: column;
   }
+
   .cabeceraLi {
-      margin: .5em 0;
+    margin: .5em 0;
   }
 }

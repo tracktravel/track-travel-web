@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Team.module.css";
-import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import SocialNetwork from "../socialNetwork/SocialNetwork";
 
 const team = [
@@ -106,9 +105,8 @@ const team = [
     github: "https://github.com/JuanCruzL",
     image: "/team/juan1.png",
   },
-
 ];
-//
+
 const Team = () => {
   return (
     <div className={styles.container}>
@@ -126,7 +124,6 @@ const Team = () => {
               <h1>{person.name}</h1>
               <h2>{person.rol}</h2>
             </div>
-
             <div className={styles.container__card_info_socialNetwork}>
               <SocialNetwork
                 team={true}
