@@ -1,9 +1,8 @@
 import React from "react";
-import { BsShieldFillCheck, BsCheckCircleFill, BsController } from "react-icons/bs";
+import { BsShieldFillCheck, BsCheckCircleFill } from "react-icons/bs";
 import { GiGears } from "react-icons/gi";
 import { FaHandshake } from "react-icons/fa";
 import styles from "./HomeDescription.module.css";
-
 
 const HomeDescription = () => {
   return (
@@ -30,7 +29,7 @@ const HomeDescription = () => {
           <div className={styles.cards}>
             <BsShieldFillCheck className={styles.items} />
             <h3>
-              Seguridad   
+              Seguridad
             </h3>
           </div>
           <p>
@@ -48,15 +47,6 @@ const HomeDescription = () => {
             Track Travel permite a los usuarios rastrear su viaje de manera automática, dejando la tarea de rastrear su viaje a la aplicación. De esta manera, los usuarios pueden concentrarse en disfrutar de su viaje.
           </p>
         </div>
-        {/* <div>
-          <h3>
-            <BsController className={styles.items}/>
-            Control
-          </h3>
-          <p>
-          Track Travel permite a los usuarios tener control del viaje que están realizando, ya que pueden ver el viaje de manera visual en un mapa.
-          </p>
-        </div> */}
         <div>
           <div className={styles.cards}>
             <FaHandshake className={styles.items} />

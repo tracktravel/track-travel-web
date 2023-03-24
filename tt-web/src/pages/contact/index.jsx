@@ -4,10 +4,9 @@ import Contact from "@/components/Contact/Contact";
 const Index = () => {
   return (
     <div>
-     <Contact />
+      <Contact />
     </div>
   );
 }
-
 
 export default Index;

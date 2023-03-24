@@ -5,16 +5,14 @@ import aboutImg2 from '../../assets/about2.png'
 import Image from 'next/image';
 import Team from '@/components/team/Team';
 
-//warnings en el componente Team debido a las imágenes. recomienda usar o width o heigth auto para mantener el aspect ratio
-
-const About = () => { 
+const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.about}>
         <h1 className={styles.title}>About</h1>
       </div>
       <div className={styles.p1}>
-        <Image alt="Imagen Muestra" className={styles.p1Image} src={aboutImg}/>
+        <Image alt="Imagen Muestra" className={styles.p1Image} src={aboutImg} />
         <div>
           <h1>Nuestra historia</h1>
           <p>Nuestra historia comenzó hace varios años, cuando un grupo de entusiastas del turismo y los negocios se unieron con la visión de crear una agencia de seguimiento de viajes que ofreciera a los viajeros y empresarios una forma más sencilla y efectiva de organizar sus viajes.
@@ -28,7 +26,7 @@ const About = () => {
           <h1>Quienes somos?</h1>
           <p>En Track Travel, somos un equipo de apasionados desarrolladores web con experiencia en el diseño y desarrollo de sitios y aplicaciones web de alta calidad. Nos enorgullece ofrecer soluciones personalizadas para cada uno de nuestros clientes, centrándonos en la atención al detalle y la experiencia del usuario. Nuestro objetivo es proporcionar una experiencia de desarrollo web completa y personalizada para satisfacer las necesidades y objetivos de cada cliente. Nos esforzamos por utilizar las últimas tecnologías y técnicas para garantizar que cada proyecto se desarrolle de manera eficiente y eficaz. Nos enorgullece trabajar en estrecha colaboración con nuestros clientes para comprender sus objetivos y necesidades específicas. Creemos que la comunicación clara y constante es la clave para el éxito de cualquier proyecto y nos aseguramos de mantener a nuestros clientes informados en cada paso del proceso de desarrollo. Ya sea que necesites un sitio web simple o una aplicación web compleja, nuestro equipo está aquí para ayudarte. No dudes en ponerte en contacto con nosotros para hablar sobre tus necesidades de desarrollo web y cómo podemos ayudarte a alcanzar tus objetivos en línea. </p>
         </div>
-        <Image alt="Imagen Muestra 2" className={styles.p2Image} src={aboutImg2}/>
+        <Image alt="Imagen Muestra 2" className={styles.p2Image} src={aboutImg2} />
       </div>
       <Team />
     </div>

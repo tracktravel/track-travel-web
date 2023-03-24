@@ -5,12 +5,11 @@
 .footer{
     width: 100%;
     background: #272727;
-    /* height: 400px; */
     padding: 0 30px;
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
 }
+
 .containerOne {
-    
     border-bottom: 1px solid #343a40;
     padding: 40px 0;
     margin-bottom: 30px;
@@ -22,6 +21,7 @@
     width: 100%;
     color: #dcdcdd;
 }
+
 .column {
     width: 250px;
     color: #dcdcdd;

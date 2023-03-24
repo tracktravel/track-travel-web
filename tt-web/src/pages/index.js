@@ -1,13 +1,7 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
-import styles from '@/styles/index.module.css';
-// import Solutions from '@/components/Solutions/Solutions';
 import Hero from '@/components/hero/Hero';
 import HomeDescription from '@/components/homeDescription/HomeDescription';
 import SliderCard from "@/components/slider/SliderCard";
-
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -19,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon-120x120.png" />
       </Head>
       <div>
-        <section id="solutions" className={styles.container}>
+        <section id="solutions">
           <Hero />
           <HomeDescription />
           <SliderCard />

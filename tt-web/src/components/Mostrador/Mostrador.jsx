@@ -5,8 +5,7 @@ import Image2 from '../../assets/Slider/Samaná.jpg';
 import Image3 from '../../assets/Slider/Dubai.jpg';
 import styles from "./Mostrador.module.css";
 
-
-export default function Mostrador () { 
+export default function Mostrador() {
     return (
         <div className={`${styles.mostrador} centerColumn`}>
             <h1>Viaja con confianza, nuestras agencias aliadas están presentes en más de 150 países</h1>
