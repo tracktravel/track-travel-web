@@ -7,8 +7,15 @@
 /* Typography */
 @font-face {
   font-family: 'Nexa-Heavy';
-  src: url('../fonts/Nexa-Heavy.ttf')
+  src: url('../fonts/Nexa-Heavy.ttf');
 }
+
+@font-face {
+  font-family: 'Nexa-ExtraLight';
+  src: url('../fonts/Nexa-ExtraLight.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 * {
   margin: 0;
@@ -17,7 +24,6 @@
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
-
 
 html {
   line-height: 1.15;
@@ -45,9 +51,12 @@ main {
 /*  Correct the font size and margin on h1 elements within section and
     article contexts in Chrome, Firefox, and Safari.  */
 
-h1 {
-  font-family: 'Nexa-Heavy';
-  font-size: 1.75em;
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
 }
 
 /* Grouping content ========================================================================== */
