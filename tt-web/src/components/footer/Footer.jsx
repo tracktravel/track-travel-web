@@ -64,7 +64,7 @@ export default function Footer() {
               objective as a company is to revolutionize the organization of
               agencies regarding their local tours and trips. Offering security
               and confidence from the moment of the sale until the end of the
-              journey. We are a young and energetic company.
+              journey.
             </p>
           </div>
         </div>

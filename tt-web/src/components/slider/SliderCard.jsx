@@ -47,11 +47,14 @@ export default function Slider() {
           <IoIosArrowForward className={styles.buttons} />
         </div>
       </div>
-
-      <h3 className={`${styles.h3}  `}>SIEMPRE TENDRAS EL CONTROL</h3>
-      <div className={styles.slider__container_button_text}>
-        <p>No importa el lugar, seremos tu respealdo inteligente donde quiera que vayas</p>
-        <button className={`${styles.btnGrad} `}>VER TODOS NUESTROS ALIADOS</button>
+      <div className={styles.title_slider1}>
+        <div className={styles.title_container1}>
+          <h3 className={`${styles.h3}  `}>SIEMPRE TENDRAS EL CONTROL</h3>
+          <p>¿Estás lejos de tu computadora? No importa. Nuestra app móvil ofrece las herramientas más importantes de Track Travel para que no te pierdas de nada.</p>
+        </div>
+        <div className={styles.slider__container_button_text}>
+          <button className={`${styles.btnGrad} `}>EXPLORA NUESTRAS HERRAMIENTAS</button>
+        </div>
       </div>
 
       <div className={`${styles.container__slider}`}>
@@ -59,7 +62,7 @@ export default function Slider() {
           {...settings}
           ref={sliderRef}
         >
-          {data.map((item, key) => ( // esta mal puesto el key deberia ir en el div padre, arroja un warning en la key
+          {data.map((item, key) => (
             <div key={key} className={`${styles.map} `}>
               <Image className={`${styles.imagen} `} src={item.image} alt={item.title} />
               <Link className={` ${styles.text} linkComponent `} href={item.link} target='_blank' rel='noreferrer noopener'>
@@ -71,8 +74,15 @@ export default function Slider() {
           ))}
         </SliderC>
       </div>
-      <div className={`${styles.text__final} center`}>
-        <h2>Agencias en más 500 ciudades al rededor del mundo utilizan nuestra App</h2>
+
+      <div className={styles.title_slider}>
+        <div className={styles.slider__container_button_text}>
+          <button className={`${styles.btnGrad} `}>VER TODOS NUESTROS ALIADOS</button>
+        </div>
+        <div className={styles.title_container}>
+          <h3>Agencias en más de 50 ciudades ya están interesadas en trabajar con nosotros. Se parte de esta transformación.</h3>
+          <p>¿Estás lejos de tu computadora? No importa. Nuestra app móvil ofrece las herramientas más importantes de Track Travel para que no te pierdas de nada.</p>
+        </div>
       </div>
     </div>
   );
