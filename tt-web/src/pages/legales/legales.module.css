@@ -1,0 +1,20 @@
+.container {
+    padding: 6rem;
+}
+
+.terminos h2 {
+    margin-bottom: 0.5rem;
+}
+
+.containerterms{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: -5rem;
+}
+
+.terms {
+    width: auto;
+    height: 15rem;
+}

@@ -1,18 +1,19 @@
-import React from "react";
+import { useRouter } from "next/router";
 import NavBar from "@/components/NavBar/NavBar";
-import Footer from "@/components/Footer/Footer";
-import WhatsApp from "@/components/WhatsApp/WhatsApp";
-import Scroll from "@/components/Scroll/Scroll";
+import Footer from "@/components/footer/Footer";
+import WhatsApp from "@/components/whatsApp/WhatsApp";
+import Scroll from "@/components/scroll/Scroll";
 
+export default function Layout({ children }) {
+  const isError = children.props.statusCode;
 
-export default function Layout({children}) {
-    return (
-        <div>
-            <NavBar />
-            <WhatsApp />
-            <main>{children}</main>
-            <Scroll />
-            <Footer/>
-        </div>
-    );
-};
+  return (
+    <div>
+      {!isError && <NavBar />}
+      {!isError && <WhatsApp />}
+      <main>{children}</main>
+      <Scroll />
+      {!isError && <Footer />}
+    </div>
+  );
+}

@@ -1,0 +1,27 @@
+.socialNetworks {
+    height: 50px;
+    padding: 0 0 5px 0;
+    gap: 15px;
+}
+
+.borderSocialNetworks {
+    transition: 100ms all ease;
+}
+
+.borderSocialNetworks:hover {
+    transform: scale(1.1);
+}
+
+.iconSocialNetworks {
+    font-size: 30px;
+    color: white;
+}
+
+.iconSocialNetworks:hover {
+    color: var(--main-color);
+}
+
+.iconSocialNetworksBlack {
+    font-size: 30px;
+    color: rgb(6, 6, 6);
+}

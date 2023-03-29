@@ -1,63 +1,59 @@
-.generalContactUs {
+.contact {
+    height: 900px;
     width: 100%;
-    height: 800px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, #403d39, #000000);
 }
-.contactUs {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 650px;
-    border-radius: 20px;
-    /* box-shadow: 50px 100px 100px 20px rgba(0, 0, 0,1); */
-    overflow: hidden;
-    background: #F7F5F5;
-    margin-top: -2rem;
-    margin-bottom: -2.5rem;
-}
-
-/*---------------Container imagen---------------*/
-.containerUnoContactUs {
-    /* border: 1px solid green; */
+.container {
     width: 100%;
-    height: 100%;
+}
+.one, .two {
+    height: 450px;
+    width: 350px;
+}
+.one {
+    gap: 10px;
+}
+.one .subtitle {
+    color: var(--main-color);
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.one .title {
+    margin: 0 0 15px 0;
+}
+.title{
+    font-size: 20px;
+}
+.subtitle{
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+.section {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    height: 50px;
+    max-width: 330px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 0 10px 0;
+    gap: 10px;
+    border: 1px solid #dee2e6;
 }
-.imagenBuzon {
-    height: 100%;
-    width: 400px;
+.section:hover {
+    border: 1px solid #dd302c;
 }
-
-/*---------------Container formulario---------------*/
-.containerDosContactUs {
-    /* border: 1px solid yellow; */
-    width: 100%;
+.form {
+    max-width: 350px;
     height: 100%;
+    border-radius: 10px;
+    background: #dee2e6;
+    padding: 1rem 20px;
+    gap: 2px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
-.containerDosContactUs h1 {
+.form div {
     margin: 0 0 20px 0;
-    color: #287ff9;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
-}
-.contactFormContactUs {
-    text-align: center;
-}
-
-.form {
-    display: block;
-    width: 400px;
 }
 .form .input {
     height: 36px;
@@ -66,11 +62,15 @@
     font-size: 15px;
     color: #111;
     border: 1px solid #e1e1e1;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 4px;
-    transition: all, 0.3s;
 }
-.form .textarea {
+.danger {
+    color: red;
+    position: absolute;
+    margin: -1rem 0 0 0;
+}
+.textarea {
     height: 110px;
     width: 300px;
     padding: 12px 0 0 20px;
@@ -79,76 +79,123 @@
     border: 1px solid #e1e1e1;
     resize: none;
     border-radius: 4px;
-    transition: all, 0.3s;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
-.form .button {
-    width: 50%;
-    cursor: pointer;
-}
-.siteBtn {
-    border: none;
-    background: rgba(255, 215, 35);
-    color: #111;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 50px;
-    padding: 12px 40px 10px;
-}
-.siteBtnDesaprobated {
-    cursor: default;
-    border: none;
-    background: #e9ecef;
-    color: #adb5bd;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 50px;
-    padding: 12px 40px 10px;
-}
-
-.danger {
+.dangerTextarea {
     color: red;
     position: absolute;
-    margin: -30px 0 0 50px;
+    /* margin: 0rem 0 0 0; */
 }
-.messageFormSubmitted {
+.btnSend {
+    border: none;
+    border-radius: 50px;
+    background: #dd302c;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 40px 10px;
+    cursor: pointer;
+}
+.btnDisabled {
+    border: none;
+    border-radius: 50px;
+    background: #e9ecef;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #adb5bd;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 40px 10px;
+    cursor: default;
+}
+.messageSend {
     position: absolute;
-    margin: 0px 0 0 130px;
+    margin: 265px 0 0 0;
     color: green;
 }
 
-/*---------------(900px)---------------*/
+.centerColumnP {
+    position: absolute;
+}
+.charsLeft {
+    position: relative;
+    left: 80%;
+}
+
 @media screen and (max-width: 900px) {
     .imagenBuzon {
         display: none;
     }
 }
 
-/*---------------(900px)---------------*/
+@media screen and (max-width:730px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 4rem;
+    }
+    .one{
+        margin-top: 2rem;
+    }
+    .btnDisabled,.btnSend {
+      margin-bottom: 2rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .containerDosContactUs {
         width: 350px;
     }
     .form .input {
-        width: 290px;
+        width: 270px;
     }
     .form .textarea {
-        width: 290px;
+        width: 270px;
+    }
+    .charsLeft {
+       font-size: 14px;
     }
 }
 
-/*---------------(900px)---------------*/
 @media screen and (max-width: 420px) {
     .containerDosContactUs {
-        width: 300px;
+        width: 250px;
     }
     .form .input {
-        width: 250px;
+        width: 200px;
+        font-size: small;
     }
     .form .textarea {
-        width: 250px;
+        width: 200px;
+        font-size: small;
     }
     .danger {
-        margin: -30px 0 0 65px;
+        margin: -1rem 0 0 0;
+        font-size: small;
     }
+    .dangerTextarea{
+        font-size: small;
+    }
+    .one{
+        font-size: small;
+        width: 100%;
+        margin-left: 2rem;
+    }
+    .section{
+        width: 90%;
+        align-items: center;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .subtitle{
+        font-size: 13px;
+    }
+    .charsLeft {
+        font-size: 10px;
+     }
 }

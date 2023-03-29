@@ -1,10 +1,6 @@
-.container {
-  /* height: 90vh; */
-}
-
 .about {
-  margin-top: -1.5rem;
-  background-image: url("../../assets/about-bg-mobile.png");
+  margin-top: -4.8rem;
+  background-image: url("../../assets/about-bg-mobile-extendida.png");
   height: 45vh;
   background-position: right;
   background-repeat: no-repeat;
@@ -18,7 +14,6 @@
 .title {
   margin-left: 5rem;
   text-shadow: -1px 1px 1px #ff0000, -13px 4px 15px rgb(0, 0, 0);
-  /* text-shadow: -2px 2px 0 #ff0000, -7px 5px 0 #000000; */
   color: rgb(255, 255, 255);
   letter-spacing: 2.5px;
 }
@@ -26,6 +21,11 @@
 .p1 {
   display: flex;
   padding: 2rem;
+}
+
+.p1 p {
+  letter-spacing: 0.01em;
+  line-height: 2em;
 }
 
 .p1 div h1 {
@@ -47,12 +47,15 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .hero {
+  .about {
     background-image: url("../../assets/about-bg.png");
+    margin-top: -1.5rem;
   }
-  .p1Image, .p2Image{
+
+  .p1Image,
+  .p2Image {
     display: flex;
     width: auto;
     height: 12rem;
   }
-}
+} 
