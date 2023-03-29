@@ -24,7 +24,7 @@ export default function Footer() {
           <div className={`${styles.containerTwo} jcspaceBetween`}>
             <div className={`${styles.column} `}>
               <h3>Track Travel</h3>
-              <Link href="/#">Nuestra historia</Link>
+              <Link href="/about">Nuestra historia</Link>
               <Link href="/#">Preguntas frecuentes</Link>
             </div>
             <div className={`${styles.column} `}>
