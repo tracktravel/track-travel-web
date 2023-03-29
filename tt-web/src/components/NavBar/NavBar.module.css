@@ -65,7 +65,7 @@
 }
 
 .cabeceraLiActive {
-  background: #e63946;
+  background: var(--main-color);
   padding: .5rem;
   border-radius: 0.4rem;
 }
