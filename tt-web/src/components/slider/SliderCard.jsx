@@ -67,7 +67,7 @@ export default function Slider() {
               <Image className={`${styles.imagen} `} src={item.image} alt={item.title} />
               <Link className={` ${styles.text} linkComponent `} href={item.link} target='_blank' rel='noreferrer noopener'>
                 <div className={`${styles.textCarousel} `}>
-                  <h2>{item.title}</h2>
+                  <h2 className={styles.textCarousel__title}>{item.title}</h2>
                 </div>
               </Link>
             </div>

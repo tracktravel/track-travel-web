@@ -1,12 +1,14 @@
 .logo {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
-    gap: 10px;
-    width: 250px;
+  gap: 10px;
+  width: 250px;
 }
 
 .container h1 {
-    color: white;
+  color: white;
+  font-family: "YellowTail";
+  font-weight: 300;
 }

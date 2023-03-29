@@ -9,8 +9,10 @@ export default function Stores() {
     return (
         <div className={styles.stores}>
             <Link href="/#">
+                <div data-tooltip="Entra en contacto" >
                 <div className={`${styles.store} center `}>
                     <Image src={AppStore} alt="Apple" />
+                </div>
                 </div>
             </Link>
             <Link href="/#">
