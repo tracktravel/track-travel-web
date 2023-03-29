@@ -51,7 +51,7 @@
     font-weight: bold;
 }
 .marca:hover {
-    color: teal;
+    color: var(--main-color);
 }
 
 @media screen and (max-width: 760px) {
