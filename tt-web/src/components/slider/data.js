@@ -14,91 +14,65 @@ import image13 from "../../assets/Slider/Medellin.jpg";
 import image14 from "../../assets/Slider/Mexico.jpg";
 import image15 from "../../assets/Slider/Samaná.jpg";
 
-
 export const data = [
     {
         image: image1,
         title: "Rio de Janeiro",
-        link: 'https://www.linkedin.com'
     },
     {
         image: image2,
         title: "SanAgustin",
-        link: 'https://www.youtube.com/'
     },
     {
         image: image3,
         title: "BuenosAires",
-        link: 'https://translate.google.com/?hl=es'
     },
     {
         image: image4,
         title: "Cancun",
-        link: 'https://www.linkedin.com'
     },
     {
         image: image5,
         title: "Santiago",
-        link: 'https://www.youtube.com/'
     },
     {
         image: image6,
         title: "Machu Pichu",
-        link: 'https://translate.google.com/?hl=es'
     },
     {
         image: image7,
         title: "Salar de Uyuni",
-        link: 'https://www.youtube.com/'
     },
     {
         image: image8,
         title: "Sao Paulo",
-        link: 'https://www.youtube.com/'
     },
     {
         image: image9,
         title: "Valle del Cocora",
-        link: 'https://www.youtube.com/'
     },
     {
         image: image10,
         title: "Córdoba",
-        link: 'https://translate.google.com/?hl=es'
     },
     {
         image: image11,
         title: "Dubai",
-        link: 'https://www.linkedin.com'
     },
     {
         image: image12,
         title: "Madrid",
-        link: 'https://translate.google.com/?hl=es'
     },
     {
         image: image13,
         title: "Medellín",
-        link: 'https://www.linkedin.com'
     },
     {
         image: image14,
         title: "Ciudad de México",
-        link: 'https://www.youtube.com/'
     },
     {
         image: image15,
         title: "Samaná",
-        link: 'https://translate.google.com/?hl=es'
     }
 ];
-
-
-
-
-
-
-
-
-
-// export const data = [ image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15 ];

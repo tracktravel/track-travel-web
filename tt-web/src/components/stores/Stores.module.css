@@ -1,10 +1,17 @@
-/* .stores {
-
-} */
-
 .store {
     height: 50px;
     width: 160px;
     border-radius: 5px;
     background: #517581;
+}
+
+.stores {
+    display: flex;
+    gap: 10px
+}
+
+@media screen and (max-width: 350px) {
+    .stores {
+        flex-direction: column;
+    }
 }
