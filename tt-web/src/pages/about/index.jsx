@@ -15,10 +15,14 @@ const About = () => {
         <Image alt="Imagen Muestra" className={styles.p1Image} src={aboutImg} />
         <div>
           <h1>Nuestra historia</h1>
-          <p>Nuestra historia comenzó hace varios años, cuando un grupo de entusiastas del turismo y los negocios se unieron con la visión de crear una agencia de seguimiento de viajes que ofreciera a los viajeros y empresarios una forma más sencilla y efectiva de organizar sus viajes.
-            Desde entonces, hemos trabajado incansablemente para proporcionar una amplia gama de servicios de seguimiento de viajes para nuestros clientes, tanto para viajes de negocios como para viajes de turismo. Nos hemos enfocado en ofrecer una solución integral que les permita a los viajeros tener todo lo que necesitan en un solo lugar.
-            Con el tiempo, hemos ampliado nuestro alcance y hemos desarrollado una red global de socios y proveedores, lo que nos permite ofrecer un servicio de seguimiento de viajes de clase mundial. Nos enorgullecemos de tener un equipo altamente capacitado y experimentado que está dedicado a brindar una experiencia de seguimiento de viajes sin igual a nuestros clientes.
-            A medida que avanzamos en el futuro, seguimos comprometidos con nuestro objetivo de brindar soluciones de seguimiento de viajes innovadoras y de alta calidad a nuestros clientes en todo el mundo. Nos apasiona lo que hacemos y esperamos seguir siendo un líder en el mercado de seguimiento de viajes en el futuro.</p>
+          <p>Nuestra historia no data de hace muchos años, pero orgullosamente si acarrea muchísima energía y voluntades individuales alineadas para brindarte el mejor servicio posible.
+            Hace solo pocos meses comenzamos a aliarnos con un objetivo común de superación y aprendizaje.
+            Hoy nos encontramos trabajando de forma constante en una solución práctica y puntual para todas las agencias de turismo del mundo.
+            Sí, del mundo. Y orgullosamente llevamos toda esta ambición adelante.
+            Desde Río de Janeiro nace la idea, después de la observación de múltiples agencias con problemas de gestión en su día a día.
+            Luego de un estudio más profundo respecto a estas falencias, comenzamos a conformar nuestro equipo. Algunos somos amigos de estudios, otros, graduados recientemente de una escuela en común de programación, y así, poco a poco, terminamos conformando nuestro equipo.
+            Puede que nuestra historia sea bastante discrepante al “history telling” que normalmente vemos escrito en un sin fin de proyectos y webs. Nosotros no necesitamos mentir. Nuestro producto hablará por sí mismo con todas sus cualidades generadas por este equipo genuino y persistente.
+          </p>
         </div>
       </div>
       <div className={styles.p1}>
