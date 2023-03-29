@@ -42,7 +42,7 @@ export default function Footer() {
             <div className={`${styles.column} `}>
               <h3>Contacto</h3>
               <Link
-                href="https://web.whatsapp.com/send?phone=5521994046975&text=Hola,"
+                href="https://web.whatsapp.com/send?phone=+5521994046975,"
                 target="_blank">
                 <RiWhatsappFill /> WhatsApp
               </Link>
