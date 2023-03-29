@@ -35,9 +35,9 @@ export default function Footer() {
             </div>
             <div className={`${styles.column} `}>
               <h3>¿Eres agencia?</h3>
-              <Link href="/#">Registra tu agencia</Link>
-              <Link href="/#">Beneficios</Link>
-              <Link href="/#">Publicidad</Link>
+              <Link href="/agency">Registra tu agencia</Link>
+              <Link href="/agency">Beneficios</Link>
+              <Link href="/agency">Publicidad</Link>
             </div>
             <div className={`${styles.column} `}>
               <h3>Contacto</h3>
