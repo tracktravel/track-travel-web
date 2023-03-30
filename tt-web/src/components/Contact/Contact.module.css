@@ -1,168 +1,186 @@
 .contact {
+
     height: 900px;
     width: 100%;
     display: flex;
     justify-content: center;
     overflow: hidden;
+
 }
 .container {
-    width: 100%;
+  width: 100%;
 }
-.one, .two {
-    height: 450px;
-    width: 350px;
+.one,
+.two {
+  height: 450px;
+  width: 350px;
 }
 .one {
-    gap: 10px;
+  gap: 10px;
 }
 .one .subtitle {
-    color: var(--main-color);
-    letter-spacing: 2px;
-    font-size: 16px;
+  color: var(--main-color);
+  letter-spacing: 2px;
+  font-size: 16px;
 }
 .one .title {
-    margin: 0 0 15px 0;
+  margin: 0 0 15px 0;
 }
-.title{
-    font-size: 20px;
+.title {
+  font-size: 20px;
 }
-.subtitle{
-    font-size: 15px;
-    margin-bottom: 1rem;
+.subtitle {
+  font-size: 15px;
+  margin-bottom: 1rem;
 }
 .section {
-    display: flex;
-    height: 50px;
-    max-width: 330px;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 0 0 10px 0;
-    gap: 10px;
-    border: 1px solid #dee2e6;
+  display: flex;
+  height: 50px;
+  max-width: 330px;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 0 10px 0;
+  gap: 10px;
+  border: 1px solid #dee2e6;
 }
 .section:hover {
-    border: 1px solid #dd302c;
+  border: 1px solid #dd302c;
 }
 .form {
-    max-width: 350px;
-    height: 100%;
-    border-radius: 10px;
-    background: #dee2e6;
-    padding: 1rem 20px;
-    gap: 2px;
-    display: flex;
-    flex-direction: column;
+  max-width: 350px;
+  height: 100%;
+  border-radius: 10px;
+  background: #dee2e6;
+  padding: 1rem 20px;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form div {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 .form .input {
-    height: 36px;
-    width: 300px;
-    padding-left: 20px;
-    font-size: 15px;
-    color: #111;
-    border: 1px solid #e1e1e1;
-    margin-bottom: 20px;
-    border-radius: 4px;
+  height: 36px;
+  width: 300px;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #111;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
 .danger {
-    color: red;
-    position: absolute;
-    margin: -1rem 0 0 0;
+  color: red;
+  position: absolute;
+  margin: -1rem 0 0 0;
 }
 .textarea {
-    height: 110px;
-    width: 300px;
-    padding: 12px 0 0 20px;
-    font-size: 15px;
-    color: #111;
-    border: 1px solid #e1e1e1;
-    resize: none;
-    border-radius: 4px;
-    /* margin-bottom: 20px; */
+  height: 110px;
+  width: 300px;
+  padding: 12px 0 0 20px;
+  font-size: 15px;
+  color: #111;
+  border: 1px solid #e1e1e1;
+  resize: none;
+  border-radius: 4px;
+  /* margin-bottom: 20px; */
 }
 .dangerTextarea {
-    color: red;
-    position: absolute;
-    /* margin: 0rem 0 0 0; */
+  color: red;
+  position: absolute;
+  /* margin: 0rem 0 0 0; */
 }
 .btnSend {
-    border: none;
-    border-radius: 50px;
-    background: #dd302c;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: white;
-    width: 200px;
-    margin: 0 auto;
-    padding: 12px 40px 10px;
-    cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border: 2px solid #dd302c;
+  border-radius: 8px;
+  color: var(--main-color);
+  background-color: inherit;
+  box-shadow: 9px 9px 15px -3px rgba(0, 0, 0, 0.75);
+  width: 65%;
 }
+
+.btnSend:hover {
+  background-color: #dd302c;
+  color: #fff;
+  border: 2px solid #dd302c;
+  cursor: pointer;
+}
+
 .btnDisabled {
-    border: none;
-    border-radius: 50px;
-    background: #e9ecef;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: #adb5bd;
-    width: 200px;
-    margin: 0 auto;
-    padding: 12px 40px 10px;
-    cursor: default;
+  border: none;
+  border-radius: 8px;
+  background: #e9ecef;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #adb5bd;
+  width: 65%;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  cursor: default;
 }
 .messageSend {
-    position: absolute;
-    margin: 265px 0 0 0;
-    color: green;
+  position: absolute;
+  margin: 350px 0 0 0;
+  color: green;
 }
 
 .centerColumnP {
-    position: absolute;
+  position: absolute;
 }
 .charsLeft {
-    position: relative;
-    left: 80%;
+  position: relative;
+  left: 80%;
 }
 
 @media screen and (max-width: 900px) {
-    .imagenBuzon {
-        display: none;
-    }
+  .imagenBuzon {
+    display: none;
+  }
 }
 
-@media screen and (max-width:730px){
-    .container{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 4rem;
-    }
-    .one{
-        margin-top: 2rem;
-    }
-    .btnDisabled,.btnSend {
-      margin-bottom: 2rem;
-    }
+@media screen and (max-width: 730px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+  .one {
+    margin-top: 2rem;
+  }
+  .btnDisabled,
+  .btnSend {
+    margin-bottom: 2rem;
+  }
+  /* .messageSend {
+        margin: 350px 0 0 0;
+    } */
 }
 
 @media screen and (max-width: 500px) {
-    .containerDosContactUs {
-        width: 350px;
-    }
-    .form .input {
-        width: 270px;
-    }
-    .form .textarea {
-        width: 270px;
-    }
-    .charsLeft {
-       font-size: 14px;
-    }
+  .containerDosContactUs {
+    width: 350px;
+  }
+  .form .input {
+    width: 270px;
+  }
+  .form .textarea {
+    width: 270px;
+  }
+  .charsLeft {
+    font-size: 14px;
+  }
+  /* .messageSend {
+        margin: 350px 0 0 0;
+    } */
 }
 
 @media screen and (max-width: 420px) {
+
     .containerDosContactUs {
         width: 250px;
     }
@@ -199,4 +217,5 @@
     .charsLeft {
         font-size: 10px;
      }
+
 }
