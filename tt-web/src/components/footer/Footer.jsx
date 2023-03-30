@@ -25,7 +25,7 @@ export default function Footer() {
             <div className={`${styles.column} `}>
               <h3>Track Travel</h3>
               <Link href="/about">Nuestra historia</Link>
-              <Link href="/#">Preguntas frecuentes</Link>
+              <Link href="/preguntas">Preguntas frecuentes</Link>
             </div>
             <div className={`${styles.column} `}>
               <h3>Legal</h3>
