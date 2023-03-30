@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .container {
     width: 100%;
@@ -181,12 +182,12 @@
         font-size: small;
     }
     .one{
-        font-size: small;
+        text-align: center;
         width: 100%;
-        margin-left: 2rem;
+       
     }
     .section{
-        width: 90%;
+        width: 100%;
         align-items: center;
     }
     .title{
