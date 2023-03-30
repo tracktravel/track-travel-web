@@ -1,8 +1,11 @@
 .contact {
-  height: 900px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
 }
 .container {
   width: 100%;
@@ -177,43 +180,42 @@
 }
 
 @media screen and (max-width: 420px) {
-  .containerDosContactUs {
-    width: 250px;
-  }
-  .form .input {
-    width: 200px;
-    font-size: small;
-  }
-  .form .textarea {
-    width: 200px;
-    font-size: small;
-  }
-  .danger {
-    margin: -1rem 0 0 0;
-    font-size: small;
-  }
-  .dangerTextarea {
-    font-size: small;
-  }
-  .one {
-    font-size: small;
-    width: 100%;
-    margin-left: 2rem;
-  }
-  .section {
-    width: 90%;
-    align-items: center;
-  }
-  .title {
-    font-size: 18px;
-  }
-  .subtitle {
-    font-size: 13px;
-  }
-  .charsLeft {
-    font-size: 10px;
-  }
-  /* .messageSend {
-        margin: 350px 0 0 0;
-} */
+
+    .containerDosContactUs {
+        width: 250px;
+    }
+    .form .input {
+        width: 200px;
+        font-size: small;
+    }
+    .form .textarea {
+        width: 200px;
+        font-size: small;
+    }
+    .danger {
+        margin: -1rem 0 0 0;
+        font-size: small;
+    }
+    .dangerTextarea{
+        font-size: small;
+    }
+    .one{
+        text-align: center;
+        width: 100%;
+       
+    }
+    .section{
+        width: 100%;
+        align-items: center;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .subtitle{
+        font-size: 13px;
+    }
+    .charsLeft {
+        font-size: 10px;
+     }
+
 }
