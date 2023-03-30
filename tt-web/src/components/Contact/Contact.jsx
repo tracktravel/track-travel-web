@@ -26,6 +26,7 @@ function validate(input) {
 export default function Contact() {
     const [errors, setErrors] = useState({});
     const [formSubmitted, setFormSubmitted] = useState(false);      //Aviso de color informando que el formulario fue enviado
+    const[chars, setChars] = useState(0)
 
     const [input, setInput] = useState({
         name: '',
@@ -42,6 +43,9 @@ export default function Contact() {
             ...input,
             [e.target.name]: e.target.value
         }));
+        if(e.target.nodeName === "TEXTAREA") {
+            setChars(e.target.value.length)
+        }
     };
 
     function handleSubmit(e) {
@@ -66,16 +70,15 @@ export default function Contact() {
     return (
         <div className={`${styles.contact} `}>
             <div className={`${styles.container} center `}>
-
                 <div className={`${styles.one} `}>
-                    <p className={`${styles.title} `} >CONTACTO</p>
-                    <p className={`${styles.subtitle} `} >Queremos escucharte</p>
+                    <h2 className={`${styles.title} `} >CONTACTO</h2>
+                    <h3 className={`${styles.subtitle} `} >Queremos escucharte</h3>
 
                     <div className={` `}>
-                        <div className={`${styles.section} `}>
+                        {/* <div className={`${styles.section} `}>
                             <BsFillTelephoneFill className={`${styles.icon} `} />
                             <p>123456789</p>
-                        </div>
+                        </div> */}
                         <div className={`${styles.section} `}>
                             <BsWhatsapp className={`${styles.icon} `} />
                             <p>+55 21994046975</p>
@@ -86,7 +89,7 @@ export default function Contact() {
                         </div>
                         <div className={`${styles.section} `}>
                             <FaMapMarkerAlt className={`${styles.icon} `} />
-                            <p>tracktravel@gmail.com</p>
+                            <p>Rio de Janeiro, Brasil</p>
                         </div>
                     </div>
                 </div>
@@ -103,9 +106,10 @@ export default function Contact() {
                             {errors.email && <p className={`${styles.danger}`}>{errors.email}</p>}
                         </div>
 
-                        <div className={` centerColumnP`}>
-                            <textarea className={styles.textarea} name="message" value={input.message} placeholder='Comentarios' onChange={(e) => handleChange(e)} ></textarea>
+                        <div className={styles.textareaContainer}>
+                            <textarea className={styles.textarea} name="message" value={input.message} placeholder='Comentarios' maxLength="500" onChange={(e) => handleChange(e)} ></textarea>
                             {errors.message && <p className={`${styles.dangerTextarea}`}>{errors.message}</p>}
+                            <p className={styles.charsLeft}>{chars}/500</p>
                         </div>
 
                         {

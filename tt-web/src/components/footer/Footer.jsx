@@ -25,7 +25,7 @@ export default function Footer() {
             <div className={`${styles.column} `}>
               <h3>Track Travel</h3>
               <Link href="/about">Nuestra historia</Link>
-              <Link href="/preguntas">Preguntas frecuentes</Link>
+              <Link href="/faq">Preguntas frecuentes</Link>
             </div>
             <div className={`${styles.column} `}>
               <h3>Legal</h3>
@@ -35,14 +35,14 @@ export default function Footer() {
             </div>
             <div className={`${styles.column} `}>
               <h3>¿Eres agencia?</h3>
-              <Link href="/#">Registra tu agencia</Link>
-              <Link href="/#">Beneficios</Link>
-              <Link href="/#">Publicidad</Link>
+              <Link href="/agency">Registra tu agencia</Link>
+              <Link href="/agency">Beneficios</Link>
+              <Link href="/agency">Publicidad</Link>
             </div>
             <div className={`${styles.column} `}>
               <h3>Contacto</h3>
               <Link
-                href="https://web.whatsapp.com/send?phone=5521994046975&text=Hola,"
+                href="https://web.whatsapp.com/send?phone=+5521994046975,"
                 target="_blank">
                 <RiWhatsappFill /> WhatsApp
               </Link>

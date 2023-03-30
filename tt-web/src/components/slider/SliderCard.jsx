@@ -53,7 +53,7 @@ export default function Slider() {
           <p>¿Estás lejos de tu computadora? No importa. Nuestra app móvil ofrece las herramientas más importantes de Track Travel para que no te pierdas de nada.</p>
         </div>
         <div className={styles.slider__container_button_text}>
-          <button className={`${styles.btnGrad} `}>EXPLORA NUESTRAS HERRAMIENTAS</button>
+          <Link className={`${styles.btnGrad}`} href="/explore">EXPLORA NUESTRAS HERRAMIENTAS</Link>
         </div>
       </div>
 
@@ -75,7 +75,7 @@ export default function Slider() {
 
       <div className={styles.title_slider}>
         <div className={styles.slider__container_button_text}>
-          <button className={`${styles.btnGrad} `}>VER TODOS NUESTROS ALIADOS</button>
+          <Link className={`${styles.btnGrad}`} href="/allies">VER TODOS NUESTROS ALIADOS</Link>
         </div>
         <div className={styles.title_container}>
           <h3>Agencias en más de 50 ciudades ya están interesadas en trabajar con nosotros. Se parte de esta transformación.</h3>
