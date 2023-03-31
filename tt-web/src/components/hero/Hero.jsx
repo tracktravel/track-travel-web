@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className={styles.title}>Tours más inteligentes para tu agencia</h1>
         <Link href='#home-description' onClick={handleScroll}><button className={styles.button}>SABER MÁS</button></Link>
       </div>
-      <Image src={heroImage} className={styles.image} width={300} height={300} alt='Imagen principal de la pagina' />
+      <Image priority={true} src={heroImage} className={styles.image} width={300} height={300} alt='Imagen principal de la pagina' />
     </div>
   );
 }

@@ -2,26 +2,26 @@
     padding: 1.5% 5% 5% 5%;
 }
 
-.terminos h2 {
+.container h2 {
     margin-bottom: 0.5rem;
 }
 
-.containerterms{
+.containerfaqs{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 0.5rem;
 }
 
-.terms {
+.faqs {
     width: auto;
     height: 15rem;
     object-fit: contain;
 }
 
-
-@media screen and (min-width: 673px) {
-    .containerterms {
+@media screen and (min-width: 730px) {
+    .containerfaqs {
         justify-content: space-between;
     }
 }
