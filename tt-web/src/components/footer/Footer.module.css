@@ -6,7 +6,7 @@
     width: 100%;
     background: #272727;
     padding: 0 30px;
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .containerOne {
