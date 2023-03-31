@@ -8,12 +8,16 @@
 .title_slider1 {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .title_slider {
   display: flex;
   justify-content: space-around;
   margin-bottom: 4rem;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
 }
 
 .title_container1 {
@@ -68,7 +72,7 @@
 }
 
 .btnGrad {
-  font-size: 15px;
+  font-size: 0.7rem;
   font-weight: bold;
   padding: 0.8rem 2rem;
   border: 2px solid #dd302c;
@@ -109,6 +113,10 @@
 /*Indicador de abajo*/
 .lineIndicator li.slickActive {
   background: blue;
+}
+
+.titlesPreParagraph {
+  text-align: center;
 }
 
 .map {
