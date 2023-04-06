@@ -16,27 +16,21 @@
 }
 
 .containerTwo {
-  align-items: flex-start;
-  gap: 1rem;
-  color: #dcdcdd;
-  /* margin: 0 3rem; */
-}
-
-.columnContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #dcdcdd;
 }
 
 .column {
-  /* width: 250px; */
-  color: #dcdcdd;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 0.25rem;
-  padding-top: 15px;
+    max-width: 15.625rem;
+    color: #dcdcdd;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: .25rem;
 }
 .column a {
   text-decoration: none;
@@ -61,29 +55,24 @@
 }
 
 @media screen and (max-width: 760px) {
-  .containerOne {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  .containerTwo {
-    flex-wrap: wrap;
-  }
-  .column {
-    /* width: 100%; */
-    /* gap: 0.1rem; */
-  }
+    .containerOne {
+        flex-direction: column;
+        gap: .75rem;
+    }
+    .containerTwo {
+    }
 
-  /* Add the following styles to align headers horizontally on mobile */
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
-  }
+    .column {
+        flex-basis: 50%;
+        margin-top: 1rem;
+    }
+}
 
-  .header-container:nth-child(odd) {
-    margin-right: 5%;
-  }
+@media screen and (max-width: 400px) {
+    .column {
+        flex-basis: 70%;
+        flex-grow: 0;
+    }
 }
 
 @media screen and (max-width: 350px) {
