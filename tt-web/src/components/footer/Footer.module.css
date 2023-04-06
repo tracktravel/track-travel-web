@@ -16,14 +16,15 @@
 }
 
 .containerTwo {
+    display: flex;
     align-items: flex-start;
-    gap: 1rem;
-    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
     color: #dcdcdd;
 }
 
 .column {
-    width: 250px;
+    max-width: 15.625rem;
     color: #dcdcdd;
     display: flex;
     align-items: flex-start;
@@ -60,7 +61,18 @@
         gap: .75rem;
     }
     .containerTwo {
-        flex-wrap: wrap;
+    }
+
+    .column {
+        flex-basis: 50%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .column {
+        flex-basis: 70%;
+        flex-grow: 0;
     }
 }
 

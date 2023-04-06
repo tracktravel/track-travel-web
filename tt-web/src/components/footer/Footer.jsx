@@ -21,7 +21,7 @@ export default function Footer({ url }) {
             </div>
           </div>
 
-          <div className={`${styles.containerTwo} jcspaceBetween`}>
+          <div className={`${styles.containerTwo} `}>
             <div className={`${styles.column} `}>
               <h3>Track Travel</h3>
               <Link href="/about">Nuestra historia</Link>
@@ -41,9 +41,7 @@ export default function Footer({ url }) {
             </div>
             <div className={`${styles.column} `}>
               <h3>Contacto</h3>
-              <Link
-                href={ url }
-                target="_blank">
+              <Link href={url} target="_blank">
                 <RiWhatsappFill /> WhatsApp
               </Link>
               <Link href="mailto: info.tracktravel@gmail.com">
