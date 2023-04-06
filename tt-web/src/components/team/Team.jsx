@@ -16,7 +16,7 @@ const team = [
     rol: "Backend",
     linkedin: "https://www.linkedin.com/in/emiliano-villa-686364241/",
     github: "https://github.com/e0212",
-    image: "/team/emi.jpg",
+    image: "/team/emiliano.jpg",
   },
   {
     name: "Tomás Arregui Bellino",
