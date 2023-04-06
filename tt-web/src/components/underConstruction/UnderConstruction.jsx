@@ -6,7 +6,7 @@ import styles from "./UnderConstruction.module.css";
 const UnderConstruction = () => {
   return (
     <div className={styles.container}>
-      <Image src={image} alt="A girl constructing a web page"/>
+      <Image src={image} priority alt="A girl constructing a web page"/>
       <h1 className={styles.title}>Página en construcción</h1>
     </div>
   );
