@@ -1,71 +1,93 @@
 .background {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
-.footer{
-    width: 100%;
-    background: #272727;
-    padding: 0 30px;
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+.footer {
+  width: 100%;
+  background: #272727;
+  padding: 0 30px;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .containerOne {
-    border-bottom: 1px solid #343a40;
-    padding: 40px 0;
-    margin-bottom: 30px;
+  border-bottom: 1px solid #343a40;
+  padding: 40px 0;
+  margin-bottom: 30px;
 }
 
 .containerTwo {
-    align-items: flex-start;
-    gap: 1rem;
-    width: 100%;
-    color: #dcdcdd;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #dcdcdd;
+  /* margin: 0 3rem; */
+}
+
+.columnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .column {
-    width: 250px;
-    color: #dcdcdd;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: .25rem;
+  /* width: 250px; */
+  color: #dcdcdd;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 15px;
 }
 .column a {
-    text-decoration: none;
-    color: #dcdcdd;
-    font-size: 14px;
+  text-decoration: none;
+  color: #dcdcdd;
+  font-size: 14px;
 }
 .column a:hover {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 .textFinal {
-    margin-right: 45px;
-    padding: 1.5rem 0;
-    color: #dcdcdd;
-    font-size: 12px;
-    text-align: center;
-
+  margin-right: 45px;
+  padding: 1.5rem 0;
+  color: #dcdcdd;
+  font-size: 12px;
+  text-align: center;
 }
 .marca {
-    font-weight: bold;
+  font-weight: bold;
 }
 .marca:hover {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 @media screen and (max-width: 760px) {
-    .containerOne {
-        flex-direction: column;
-        gap: .75rem;
-    }
-    .containerTwo {
-        flex-wrap: wrap;
-    }
+  .containerOne {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .containerTwo {
+    flex-wrap: wrap;
+  }
+  .column {
+    /* width: 100%; */
+    /* gap: 0.1rem; */
+  }
+
+  /* Add the following styles to align headers horizontally on mobile */
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .header-container:nth-child(odd) {
+    margin-right: 5%;
+  }
 }
 
 @media screen and (max-width: 350px) {
-    .footer {
-        padding-top: 20px;
-    }
+  .footer {
+    padding-top: 20px;
+  }
 }
