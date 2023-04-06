@@ -1,29 +1,30 @@
 .background {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
-.footer{
-    width: 100%;
-    background: #272727;
-    padding: 0 30px;
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+.footer {
+  width: 100%;
+  background: #272727;
+  padding: 0 30px;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .containerOne {
-    border-bottom: 1px solid #343a40;
-    padding: 40px 0;
-    margin-bottom: 30px;
+  border-bottom: 1px solid #343a40;
+  padding: 40px 0;
+  margin-bottom: 30px;
 }
 
 .containerTwo {
+    display: flex;
     align-items: flex-start;
-    gap: 1rem;
-    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
     color: #dcdcdd;
 }
 
 .column {
-    width: 250px;
+    max-width: 15.625rem;
     color: #dcdcdd;
     display: flex;
     align-items: flex-start;
@@ -32,26 +33,25 @@
     gap: .25rem;
 }
 .column a {
-    text-decoration: none;
-    color: #dcdcdd;
-    font-size: 14px;
+  text-decoration: none;
+  color: #dcdcdd;
+  font-size: 14px;
 }
 .column a:hover {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 .textFinal {
-    margin-right: 45px;
-    padding: 1.5rem 0;
-    color: #dcdcdd;
-    font-size: 12px;
-    text-align: center;
-
+  margin-right: 45px;
+  padding: 1.5rem 0;
+  color: #dcdcdd;
+  font-size: 12px;
+  text-align: center;
 }
 .marca {
-    font-weight: bold;
+  font-weight: bold;
 }
 .marca:hover {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 @media screen and (max-width: 760px) {
@@ -60,12 +60,23 @@
         gap: .75rem;
     }
     .containerTwo {
-        flex-wrap: wrap;
+    }
+
+    .column {
+        flex-basis: 50%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .column {
+        flex-basis: 70%;
+        flex-grow: 0;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .footer {
-        padding-top: 20px;
-    }
+  .footer {
+    padding-top: 20px;
+  }
 }

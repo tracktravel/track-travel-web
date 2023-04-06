@@ -20,6 +20,7 @@
 
 .container__image {
   width: 100%;
+  height: auto;
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
