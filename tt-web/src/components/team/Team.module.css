@@ -47,7 +47,7 @@
 }
 
 .container__card_info_data>h2 {
-  color: #605e5ed0;
+  color: var(--about-person-rol);
   font-size: 1.1em;
   letter-spacing: 0.1em;
 }
