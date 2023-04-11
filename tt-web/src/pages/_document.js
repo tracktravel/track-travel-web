@@ -15,7 +15,7 @@ export default function Document() {
         <meta name="robots" content="index, follow"/>
 
       </Head>
-      <body>
+      <body id="switch" className="light">
         <Main />
         <NextScript />
       </body>

@@ -1,9 +1,26 @@
-:root {
+
+[data-theme="light"] {
   --main-color: #dd302c;
   --bg-color: #F7F5F5;
-  --footer-color: #343a40;
+  --footer-color: #272727;
+  --text-color: #000000;
+  /* contact form */
+  --form-bg-color: #dee2e6;
+  --form-disabled-button: #e9ecef;
+  /* about */
+  --about-person-rol: #605e5ed0;
 }
-
+[data-theme="dark"] {
+  --bg-color: #141414;
+  --main-color: #dd302c;
+  --text-color: #F7F5F5;
+  --footer-color: #272727;
+  /* contact form */
+  --form-bg-color: #272727;
+  --form-disabled-button: #3a3a3a;
+  /* about */
+  --about-person-rol: #9e9d9dd0;
+}
 /* Typography */
 
 @font-face {
@@ -51,15 +68,18 @@ main {
   background: var(--bg-color);
 }
 
+
 /*  Correct the font size and margin on h1 elements within section and
     article contexts in Chrome, Firefox, and Safari.  */
 
 h1, h2, h3, a {
   font-family: 'MetroOfficeBold';
+  color: var(--text-color)
 }
 
 p {
   font-family: 'MetroOfficeRegular';
+  color: var(--text-color)
 }
 
 /* Grouping content ========================================================================== */
