@@ -57,7 +57,7 @@ export default function Footer({ url }) {
           </div>
 
           <div className={`${styles.textFinal} `}>
-            <p>
+            <p className={styles.objectiveText}>
               <span className={`${styles.marca} `}>Track Travel Inc</span>, our
               objective as a company is to revolutionize the organization of
               agencies regarding their local tours and trips. Offering security
