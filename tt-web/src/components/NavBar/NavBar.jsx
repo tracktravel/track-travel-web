@@ -1,21 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "@/components/logo/Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./NavBar.module.css";
 import { useRouter } from "next/router";
-import { handleModeSwitch } from "../../helpers/modeSwitch"
 
 export default function NavBar() {
 	const router = useRouter();
 	const currentRoute = router.pathname;
   
-  const [mode, setMode] = useState(true)
+	const [theme, setTheme] = useState(null)
 	const [menu, setMenu] = useState(false);
+
+	useEffect(() => {
+		setTheme(localStorage.getItem("theme") === "light" ? false : true)
+	},[])
 
 	const toggleMenu = () => {
 		setMenu(!menu);
 	};
+
+	const handleModeSwitch = (e) => {
+		let mode = e.target.checked ? "dark" : "light"
+		localStorage.setItem("theme", mode)
+		let body = document.getElementById("switch")
+		body.className = localStorage.getItem("theme")
+		document.documentElement.setAttribute("data-theme", mode)
+		setTheme(!theme)
+	}
 
 	return (
 		<div className={styles.background}>
@@ -59,7 +71,7 @@ export default function NavBar() {
 						</li>
 						<li>
 							<label className={styles.switch} onChange={(e) => handleModeSwitch(e)}>
-								<input type="checkbox"></input>
+								<input type="checkbox" checked={theme}></input>
 								<span className={styles.slider}></span>
 							</label>
 						</li>
