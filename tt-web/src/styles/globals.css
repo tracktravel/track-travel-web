@@ -315,6 +315,12 @@ template {
   justify-content: center;
 }
 
+.toTheRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .centerColumn {
   display: flex;
   align-items: center;
