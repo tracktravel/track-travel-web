@@ -7,7 +7,7 @@ import styles from "./Logo.module.css";
 export default function Logo() {
     return (
         <Link href="/" className={`${styles.logo} center `}>
-            <div className={`${styles.container} center `}>
+            <div className={`${styles.container} toTheRight `}>
                 <Image width={'auto'} height={50} src={logoTravel} alt="Logo" />
                 <h1>Track Travel</h1>
             </div>
