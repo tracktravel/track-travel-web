@@ -1,5 +1,8 @@
 .logo {
   text-decoration: none;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 250px;
 }
 
 .container {
