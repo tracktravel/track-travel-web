@@ -11,48 +11,63 @@ import i18next from "i18next";
 import global_es from "../translate/es.json";
 import global_en from "../translate/en.json";
 import global_pt from "../translate/pt.json";
+import { useRouter } from "next/router";
+
+const path = require("path");
 
 i18next.init({
   interpolation: { escapeValue: false },
-
-  lng: 'es',  
+  lng: "es",
   resources: {
     es: {
-     global: global_es    
-       },
-    
-    en: {
-      global: global_en
-    },  
-    
-    pt: {
-      global: global_pt
-   }
-    } 
-  }) 
+      global: global_es,
+    },
 
+    en: {
+      global: global_en,
+    },
+
+    pt: {
+      global: global_pt,
+    },
+  },
+});
 
 export default function App({ Component, pageProps }) {
-  let [load, setLoad] = useState(null)
+  let [load, setLoad] = useState(null);
+
+  const router = useRouter();
 
   useEffect(() => {
-    applyInitialDataTheme()
+    // Obtener el idioma del navegador del usuario
+    const userLang = navigator.language || navigator.userLanguage;
+
+    // Redirigir a la versión en inglés o en español según el idioma del usuario
+    if (userLang.startsWith("es")) {
+      router.replace("/es");
+    } else if (userLang.startsWith("pt")) {
+      router.replace("/pt");
+    } else {
+      router.replace("/en");
+    }
+  }, []);
+
+  useEffect(() => {
+    applyInitialDataTheme();
     const loadedTheme = localStorage.getItem("theme");
     if (load !== loadedTheme) {
       setLoad(loadedTheme);
     }
-  },[])
+  }, []);
 
-  if(!load) {
-    return(
-      <Loader></Loader>
-    )
-  }else 
-  return (
-    <I18nextProvider i18n={i18next}> 
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-    </I18nextProvider>
-  );
+  if (!load) {
+    return <Loader></Loader>;
+  } else
+    return (
+      <I18nextProvider i18n={i18next}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </I18nextProvider>
+    );
 }
