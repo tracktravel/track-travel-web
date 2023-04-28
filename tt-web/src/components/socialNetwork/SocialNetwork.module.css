@@ -23,5 +23,5 @@
 
 .iconSocialNetworksBlack {
     font-size: 30px;
-    color: rgb(6, 6, 6);
+    color: var(--text-color);
 }

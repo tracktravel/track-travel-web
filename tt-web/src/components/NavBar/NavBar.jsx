@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "@/components/logo/Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -6,64 +6,78 @@ import styles from "./NavBar.module.css";
 import { useRouter } from "next/router";
 
 export default function NavBar() {
-  const router = useRouter()
-  const currentRoute = router.pathname
+	const router = useRouter();
+	const currentRoute = router.pathname;
+  
+	const [theme, setTheme] = useState(null)
+	const [menu, setMenu] = useState(false);
 
-  const [menu, setMenu] = useState(false);
+	useEffect(() => {
+		setTheme(localStorage.getItem("theme") === "light" ? false : true)
+	},[])
 
-  const toggleMenu = () => {
-    setMenu(!menu);
-  };
+	const toggleMenu = () => {
+		setMenu(!menu);
+	};
 
-  return (
-    <div className={styles.background}>
-      <header className={styles.cabecera}>
-        <div>
-          <Logo />
-        </div>
+	const handleModeSwitch = (e) => {
+		let mode = e.target.checked ? "dark" : "light"
+		localStorage.setItem("theme", mode)
+		let body = document.getElementById("switch")
+		body.className = localStorage.getItem("theme")
+		document.documentElement.setAttribute("data-theme", mode)
+		setTheme(!theme)
+	}
 
-        <button onClick={toggleMenu} className={styles.cabeceraButton}>
-          <GiHamburgerMenu className={styles.cabeceraSvg} />
-        </button>
+	return (
+		<div className={styles.background}>
+			<header className={styles.cabecera}>
+				<div>
+					<Logo />
+				</div>
 
-        <nav className={`${styles.cabeceraNav} ${menu ? styles.isActive : ""}`}>
-          <ul className={styles.cabeceraUl}>
-            <li
-              className={`${styles.cabeceraLi} ${currentRoute === "/" ? styles.cabeceraLiActive : ""
-                }`}
-            >
-              <Link
-                className={styles.cabeceraA}
-                href="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li
-              className={`${styles.cabeceraLi} ${currentRoute === "/about" ? styles.cabeceraLiActive : ""
-                }`}
-            >
-              <Link
-                className={styles.cabeceraA}
-                href="/about"
-              >
-                About
-              </Link>
-            </li>
-            <li
-              className={`${styles.cabeceraLi} ${currentRoute === "/contact" ? styles.cabeceraLiActive : ""
-                }`}
-            >
-              <Link
-                className={styles.cabeceraA}
-                href="/contact"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-  );
+				<button onClick={toggleMenu} className={styles.cabeceraButton}>
+					<GiHamburgerMenu className={styles.cabeceraSvg} />
+				</button>
+
+				<nav className={`${styles.cabeceraNav} ${menu ? styles.isActive : ""}`}>
+					<ul className={styles.cabeceraUl}>
+						<li
+							className={`${styles.cabeceraLi} ${
+								currentRoute === "/" ? styles.cabeceraLiActive : ""
+							}`}
+						>
+							<Link className={styles.cabeceraA} href="/">
+								Home
+							</Link>
+						</li>
+						<li
+							className={`${styles.cabeceraLi} ${
+								currentRoute === "/about" ? styles.cabeceraLiActive : ""
+							}`}
+						>
+							<Link className={styles.cabeceraA} href="/about">
+								About
+							</Link>
+						</li>
+						<li
+							className={`${styles.cabeceraLi} ${
+								currentRoute === "/contact" ? styles.cabeceraLiActive : ""
+							}`}
+						>
+							<Link className={styles.cabeceraA} href="/contact">
+								Contact
+							</Link>
+						</li>
+						<li>
+							<label className={styles.switch} onChange={(e) => handleModeSwitch(e)}>
+								<input type="checkbox" checked={theme}></input>
+								<span className={styles.slider}></span>
+							</label>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+	);
 }

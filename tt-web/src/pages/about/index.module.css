@@ -1,5 +1,5 @@
 .about {
-  margin-top: -4.8rem;
+  margin-top: -5.5rem;
   background-image: url("../../assets/about-bg-mobile-extendida.png");
   height: 48vh;
   background-position: right;
@@ -59,3 +59,9 @@
     height: 12rem;
   }
 } 
+
+@media screen and (min-width: 340px) {
+  .about {
+    margin-top: -5rem;
+  }
+}
