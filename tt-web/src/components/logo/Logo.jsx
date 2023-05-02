@@ -8,11 +8,12 @@ import {useTranslation} from "react-i18next"
 
 export default function Logo() {
     const [t, i18next] = useTranslation("global") // hook de i18n
+
     return (
         <Link href="/" className={`${styles.logo} center `}>
             <div className={`${styles.container} toTheRight `}>
                 <Image width={'auto'} height={50} src={logoTravel} alt="Logo" />
-                <h1>{t("title1")}</h1>
+                <h1>Track Travel</h1>
             </div>
             <select className={`${styles.select} toTheRight `} onChange={(e) => i18next.changeLanguage(e.target.value)}>
                 <option value="es">ES</option>
@@ -21,7 +22,7 @@ export default function Logo() {
             </select>
 
 
-
+{/* {t("title1")} */}
 
         </Link>
     );
