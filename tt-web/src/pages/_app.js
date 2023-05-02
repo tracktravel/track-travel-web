@@ -39,20 +39,6 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    // Obtener el idioma del navegador del usuario
-    const userLang = navigator.language || navigator.userLanguage;
-
-    // Redirigir a la versión en inglés o en español según el idioma del usuario
-    if (userLang.startsWith("es")) {
-      router.replace("/es");
-    } else if (userLang.startsWith("pt")) {
-      router.replace("/pt");
-    } else {
-      router.replace("/en");
-    }
-  }, []);
-
-  useEffect(() => {
     applyInitialDataTheme();
     const loadedTheme = localStorage.getItem("theme");
     if (load !== loadedTheme) {
