@@ -4,11 +4,13 @@ import Logo from "@/components/logo/Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./NavBar.module.css";
 import { useRouter } from "next/router";
+import {useTranslation} from "react-i18next" 
 
 export default function NavBar() {
 	const router = useRouter();
 	const currentRoute = router.pathname;
-  
+
+  const [t, i18next] = useTranslation("global")
 	const [theme, setTheme] = useState(null)
 	const [menu, setMenu] = useState(false);
 
@@ -48,7 +50,7 @@ export default function NavBar() {
 							}`}
 						>
 							<Link className={styles.cabeceraA} href="/">
-								Home
+								{t("navbar.home")}
 							</Link>
 						</li>
 						<li
@@ -57,7 +59,7 @@ export default function NavBar() {
 							}`}
 						>
 							<Link className={styles.cabeceraA} href="/about">
-								About
+								{t("navbar.about")}
 							</Link>
 						</li>
 						<li
@@ -66,7 +68,7 @@ export default function NavBar() {
 							}`}
 						>
 							<Link className={styles.cabeceraA} href="/contact">
-								Contact
+								{t("navbar.contact")}
 							</Link>
 						</li>
 						<li>

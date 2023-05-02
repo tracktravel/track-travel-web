@@ -4,6 +4,7 @@ import Footer from "@/components/footer/Footer";
 import WhatsApp from "@/components/whatsApp/WhatsApp";
 import Scroll from "@/components/scroll/Scroll";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import Chat from "@/components/chat/Chat";
 
 export default function Layout({ children }) {
   const isError = children.props.statusCode;
@@ -12,6 +13,7 @@ export default function Layout({ children }) {
   return (
     <div>
       {!isError && <NavBar />}
+      {!isError && <Chat></Chat>}
       {!isError && <WhatsApp url={url}/>}
       <main>{children}</main>
       <Scroll />

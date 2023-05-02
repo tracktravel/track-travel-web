@@ -1,0 +1,36 @@
+{
+
+    "title1": "Seguimiento de Viajes",
+    "title2": "Tours mas inteligentes para tu agencia",
+    "navbar": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "contact": "Contacto"
+    },
+    "footer": {
+        "column1": {
+            "history": "Nuestra historia",
+            "faqs": "Preguntas frecuentes"
+        },
+        "column2": {
+            "title": "Legal",
+            "terms": "Términos y condiciones",
+            "privacy": "Aviso de privacidad",
+            "disclaimer": "Avisos legales"
+        },
+        "column3": {
+            "title": "Eres agencia?",
+            "register": "Registra tu agencia",
+            "benefits": "Beneficios",
+            "advertising": "Publicidad"
+        },
+        "column4": {
+            "title": "Contacto",
+            "whatsapp": "WhatsApp",
+            "email": "Correo electrónico",
+            "message": "Déjanos un mensaje",
+            "support": "Centro de ayuda Track Travel"
+        },
+        "finalmessage": "Track Travel Inc, nuestro objetivo como empresa es revolucionar la organización de las agencias con respecto a sus tours y viajes. Ofreciendo seguridad y confianza desde el momento de la venta hasta el final del viaje."
+    }
+}

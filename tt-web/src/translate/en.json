@@ -1,0 +1,37 @@
+{
+    "home": {
+        "title1": "Track Travel",
+        "title2": "smarter tours for your agency"
+    },
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "footer": {
+        "column1": {
+            "history": "Our history",
+            "faqs": "FAQs"
+        },
+        "column2": {
+            "title": "Legal",
+            "terms": "Terms and conditions",
+            "privacy": "Privacy notice",
+            "disclaimer": "Legal disclaimer"
+        },
+        "column3": {
+            "title": "Agencies?",
+            "register": "Register your agency",
+            "benefits": "Benefits",
+            "advertising": "Advertising"
+        },
+        "column4": {
+            "title": "Contact",
+            "whatsapp": "WhatsApp",
+            "email": "Email",
+            "message": "Leave us a message",
+            "support": "Track Travel help center"
+        },
+        "finalmessage": "our objective as a company is to revolutionize the organization of agencies regarding their local tours and trips. Offering security and confidence from the moment of the sale until the end of the journey."
+    }
+}

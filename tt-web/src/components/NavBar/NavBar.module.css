@@ -10,7 +10,7 @@
   justify-content: space-around;
   align-items: center;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
 
@@ -73,6 +73,7 @@
   background: var(--main-color);
   padding: .5rem;
   border-radius: 0.4rem;
+  transition: .3s;
 }
 
 .cabeceraA {
@@ -112,7 +113,20 @@
     margin: .5em 0;
   }
 }
+@media screen and (max-width: 320px) {
+  .cabecera{
+    flex-flow: column;
+  }
+  
+  .cabeceraUl {
+    margin-top: -3rem;
+    flex-direction: column;
+  }
 
+  .cabeceraLi {
+    margin: .5em 0;
+  }
+}
 
 /* The switch - the box around the slider */
 .switch {
