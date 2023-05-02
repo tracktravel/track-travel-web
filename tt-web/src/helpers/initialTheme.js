@@ -10,4 +10,5 @@ const applyInitialDataTheme = () => {
   }
 }
 
+
 module.exports = { applyInitialDataTheme }
