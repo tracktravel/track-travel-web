@@ -31,6 +31,32 @@
             "message": "Déjanos un mensaje",
             "support": "Centro de ayuda Track Travel"
         },
-        "finalmessage": "Track Travel Inc, nuestro objetivo como empresa es revolucionar la organización de las agencias con respecto a sus tours y viajes. Ofreciendo seguridad y confianza desde el momento de la venta hasta el final del viaje."
+        "finalmessage": "nuestro objetivo como empresa es revolucionar la organización de las agencias con respecto a sus tours y viajes. Ofreciendo seguridad y confianza desde el momento de la venta hasta el final del viaje."
+    },
+
+    "hero": {
+        "title": "Tours más inteligentes para su agencia",
+        "button": "Saber mas"
+    },
+
+    "homeDescription": {
+        "titleDescription": "Track Travel es una aplicación web/móvil que facilita todas las interacciones entre Agencias y turistas alrededor del mundo. Entre las funcionalidades más importantes podemos mencionar el rastreo de transportes, la comunicación directa entre las partes, el servicio de venta seguro e informaciones estadísticas recolectadas para mejorar la performance de la empresa prestadora de servicios. Track Travel llegó para recolocar un nuevo padrón de servicio, llevando tu Agencia de turismo a un nuevo nivel.",
+        "column1": {
+            "title": "Simplicidad",
+            "description": "Esta aplicación fue pensada para ser totalmente intuitiva. Ya seas una agencia asociada o un turista, en cuestión de pocos minutos, es posible entender y utilizar todas las herramientas ofrecidas. Y si de cualquier forma surgen dudas contamos con videos explicativos y atención al cliente para ayudarte con lo que necesites."
+        },
+        "column2": {
+            "title": "Seguridad",
+            "description": "En vez de intentar recrear la rueda, optamos por trabajar con empresas de gran renombre a la hora de trabajar con datos de carácter sensible. Todas sus operaciones financieras dentro de nuestro sitio son procesadas de manera externa de punta a punta. Del resto nos encargamos nosotros."
+        },
+        "column3": {
+            "title": "Automatización",
+            "description": "¿Ya imaginaste, como empresa, contar de manera automática con estadísticas precisas de desempeño? Trabajando con nuestra aplicación será cuestión de un par de clicks tener informaciones como: estadísticas financieras, cantidad de pasajeros transportados, localización aproximada de puntos fuertes de venta, kilómetros recorridos por sus transportes, desempeño de sus guías, etc."
+        },
+        "column4": {
+            "title": "Confianza",
+            "description": "Track Travel es una empresa en constante evolución que busca transmitir confianza ofreciendo solidez en nuestra propuesta como en nuestro compromiso diario de crecimiento empresarial. Sabemos que crecer es más fácil acompañados y queremos invitarte a ser parte de esta aventura. El cielo es el límite."
+        }
     }
 }
+

@@ -15,8 +15,8 @@ const [t] = useTranslation("global");
   return (
     <div className={styles.container}>
       <div className={styles.containerText}>
-        <h1 className={styles.title}>{t("title2")}</h1>
-        <Link href='#home-description' onClick={handleScroll}><button className={styles.button}>SABER MÁS</button></Link>
+        <h1 className={styles.title}>{t("hero.title")}</h1>
+        <Link href='#home-description' onClick={handleScroll}><button className={styles.button}>{t("hero.button")}</button></Link>
       </div>
       <Image priority={true} src={heroImage} className={styles.image} width={300} height={300} alt='Imagen principal de la pagina' />
     </div>
