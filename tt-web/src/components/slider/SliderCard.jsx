@@ -80,7 +80,7 @@ export default function Slider() {
 
       <div className={styles.title_slider}>
         <div className={styles.slider__container_button_text}>
-          <Link className={`${styles.btnGrad}`} href="/allies">{t("slider.firstSection.button")}</Link>
+          <Link className={`${styles.btnGrad}`} href="/allies">{t("slider.secondSection.button")}</Link>
         </div>
         <div className={styles.title_container}>
           <h3 className={`${styles.titlesPreParagraph}`}>{t("slider.secondSection.title")}</h3>
