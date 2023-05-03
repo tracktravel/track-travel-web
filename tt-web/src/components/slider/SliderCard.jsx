@@ -7,8 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { data } from "./data";
 import styles from "./SliderCard.module.css";
+import { useTranslation } from "react-i18next";
 
 export default function Slider() {
+  const [t] = useTranslation("global");
+
+
   const sliderRef = useRef(null);
   const settings = {
     dots: true,
@@ -49,12 +53,12 @@ export default function Slider() {
       </div>
       <div className={styles.title_slider1}>
           <div className={styles.title_container1}>
-            <h3 className={`${styles.titlesPreParagraph}`}>SIEMPRE TENDRAS EL CONTROL</h3>
-            <p  className={`${styles.titlesPreParagraph}`}>¿Estás lejos de tu computadora? No importa. Nuestra app móvil ofrece las herramientas más importantes de Track Travel para que no te pierdas de nada.</p>
+            <h3 className={`${styles.titlesPreParagraph}`}>{t("slider.firstSection.title")}</h3>
+            <p  className={`${styles.titlesParagraph}`}>{t("slider.firstSection.description")}</p>
           </div>
 
           <div className={styles.slider__container_button_text}>
-            <Link className={`${styles.btnGrad}`} href="/explore">EXPLORA NUESTRAS HERRAMIENTAS</Link>
+            <Link className={`${styles.btnGrad}`} href="/explore">{t("slider.firstSection.button")}</Link>
           </div>
       </div>
 
@@ -76,11 +80,11 @@ export default function Slider() {
 
       <div className={styles.title_slider}>
         <div className={styles.slider__container_button_text}>
-          <Link className={`${styles.btnGrad}`} href="/allies">VER TODOS NUESTROS ALIADOS</Link>
+          <Link className={`${styles.btnGrad}`} href="/allies">{t("slider.secondSection.button")}</Link>
         </div>
         <div className={styles.title_container}>
-          <h3 className={`${styles.titlesPreParagraph}`}>Agencias en más de 50 ciudades ya están interesadas en trabajar con nosotros. Se parte de esta transformación.</h3>
-          <p>¿Estás lejos de tu computadora? No importa. Nuestra app móvil ofrece las herramientas más importantes de Track Travel para que no te pierdas de nada.</p>
+          <h3 className={`${styles.titlesPreParagraph}`}>{t("slider.secondSection.title")}</h3>
+          <p>{t("slider.firstSection.description")}</p>
         </div>
       </div>
     </div>

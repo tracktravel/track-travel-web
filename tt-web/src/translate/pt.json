@@ -1,6 +1,116 @@
 {
-
-    "title1": "Rastreamento de Viagem",
-    "title2": "tours mais inteligentes para sua agência"
-
+    "navbar": {
+        "home": "Página inicial",
+        "about": "Sobre",
+        "contact": "Contato"
+    },
+    "footer": {
+        "column1": {
+            "history": "Nossa historia",
+            "faqs": "Perguntas frequentes"
+        },
+        "column2": {
+            "title": "Legalidade",
+            "terms": "Termos e condições",
+            "privacy": "Aviso de privacidade",
+            "disclaimer": "Noticias legais"
+        },
+        "column3": {
+            "title": "Você é uma agência?",
+            "register": "Cadastre sua agência",
+            "benefits": "Benefícios",
+            "advertising": "Anúncio"
+        },
+        "column4": {
+            "title": "Contato",
+            "whatsapp": "WhatsApp",
+            "email": "Correio eletrônico",
+            "message": "deixe-nos uma mensagem",
+            "support": "Central de Ajuda do Track Travel"
+        },
+        "finalmessage": "O Nosso objetivo como empresa é revolucionar a organização das agências ao respeito dos seus passeios e viagens. Oferecendo segurança e confiança desde o momento da venda até o final da viagem."
+    },
+    "hero": {
+        "title": "Tours mais inteligentes para sua agência",
+        "button": "Saiba mais"
+    },
+    "homeDescription": {
+        "titleDescription": "Track Travel é uma aplicação web/mobile que facilita todas as interações entre Agências e turistas de todo o mundo. Entre as funcionalidades mais importantes podemos citar rastreamento de transporte, comunicação direta entre as partes, serviço de vendas seguro e informações estatísticas coletadas para melhorar o desempenho da empresa prestadora de serviços. A Track Travel chegou para reposicionar um novo padrão de atendimento, levando sua Agência de Turismo a um novo nivel.",
+        "column1": {
+            "title": "Simplicidade",
+            "description": "Esta aplicação foi desenhada para ser totalmente intuitiva. Seja você uma agência parceira ou um turista, em questão de minutos é possível entender e utilizar todas as ferramentas oferecidas. E se em qualquer caso surgirem dúvidas, temos vídeos explicativos e atendimento ao cliente para ajudá-lo no que precisar."
+        },
+        "column2": {
+            "title": "Seguridade",
+            "description": "Em vez de tentar recriar a roda, optamos por trabalhar com grandes empresas quando se trata de lidar com dados confidenciais. Todas as suas operações financeiras dentro do nosso site são processadas externamente de ponta a ponta. Nós cuidamos do resto."
+        },
+        "column3": {
+            "title": "Automação",
+            "description": "Você já imaginou, como empresa, ter automaticamente estatísticas precisas de desempenho? Trabalhando com nosso aplicativo, será questão de alguns cliques para ter informações como: estatísticas financeiras, número de passageiros transportados, localização aproximada de pontos fortes de venda, quilômetros percorridos por seu transporte, desempenho de seus guias, etc."
+        },
+        "column4": {
+            "title": "Confiança",
+            "description": "A Track Travel é uma empresa em constante evolução que procura transmitir confiança oferecendo solidez em nossa proposta, assim como em nosso compromisso diário com o crescimento dos negócios. Sabemos que crescer é mais fácil acompanhado e queremos convidar você a fazer parte dessa aventura. O céu é o limite."
+        }
+    },
+    "slider": {
+        "firstSection": {
+            "title": "Você sempre terá o controle",
+            "description": "Você está longe do seu computador? Sem problemas. Nosso aplicativo móvil oferece as ferramentas Track Travel mais importantes para que você não perca nada.",
+            "button": "Explore nossas ferramentas"
+        },
+        "secondSection": {
+            "title": "Agências em mais de 50 cidades já estão interessadas em trabalhar conosco. Faça parte dessa transformação.",
+            "description": "Você está longe do seu computador? Sem problemas. Nosso aplicativo móvil oferece as ferramentas Track Travel mais importantes para que você não perca nada.",
+            "button": "Veja todos os nossos parceiros"
+        }
+    },
+    "about": {
+        "title": "Sobre",
+        "firstSection": {
+            "title": "Nossa história",
+            "description": "Uma nova geração de programadores geralmente é impulsionada pela ideia de conseguir um primeiro emprego em uma empresa estabelecida. Essa história não é muito diferente de muitas outras nesse sentido. Vários de nós, atuais integrantes da Track Travel, passamos por experiências desse estilo em empresas já consolidadas e fomos resgatando metodologias de trabalho e experiências necessárias para a realização desse projeto em particular. A nossa história não tem muitos anos, mas orgulhosamente une muita energia com vontades individuais para lhe prestar o melhor serviço possível. Há poucos meses começamos a nos aliar a um objetivo comum de aperfeiçoamento e aprendizado. Hoje trabalhamos constantemente em uma solução prática e pontual para todas as agências de viagens do mundo. Sim, o mundo. E com orgulho levamos adiante toda essa ambição. A ideia nasceu no Rio de Janeiro, após observar várias agências com problemas de gestão no dia a dia, fizemos um estudo mais aprofundado dessas deficiências e começamos a formar nossa equipe. Alguns de nós são amigos de estudos, outros são recém-formados em uma escola de programação comum e, independentemente de nossas origens, compartilhamos o mesmo entusiasmo. A nossa história pode ser bem diferente do storytelling que costumamos ver escrito em uma infinidade de projetos e sites. Não precisamos mentir. Nosso produto falará por si com todas as suas qualidades geradas por este grupo genuíno e persistente."
+        },
+        "secondSection": {
+            "title": "Quem nós somos",
+            "description": "Na Track Travel, somos uma equipe de desenvolvedores web apaixonados com experiência em projetar e desenvolver sites e aplicativos web de alta qualidade. Orgulhamo-nos de oferecer soluções personalizadas para cada um de nossos clientes, com foco na atenção aos detalhes e na experiência do usuário. Nosso objetivo é fornecer uma experiência completa de desenvolvimento web personalizada para atender às necessidades e objetivos de cada cliente. Nós nos esforçamos para usar as mais recentes tecnologias e técnicas para garantir que cada projeto seja desenvolvido de forma eficiente e eficaz. Orgulhamo-nos de trabalhar em estreita colaboração com os nossos clientes para compreender os seus objetivos e necessidades específicas. Acreditamos que uma comunicação clara e constante é a chave para o sucesso de qualquer projeto e nos certificamos de manter nossos clientes informados em todas as etapas do processo de desenvolvimento. Se você precisa de um site simples ou de um aplicativo da web complexo, nossa equipe está aqui para ajudá-lo. Sinta-se à vontade para nos contatar para discutir suas necessidades de desenvolvimento web e como podemos ajudá-lo a atingir seus objetivos online."
+        }
+    },
+    "contact": {
+        "title": "Contato",
+        "subtitle": "Queremos saber sobre você",
+        "placeholderName": "Nome completo",
+        "placeholderEmail": "E-mail",
+        "placeholderMessage": "Mensagem",
+        "button": "Enviar",
+        "errorName": "Coloca um nome válido",
+        "errorName2": "Seu nome não pode conter números ou caracteres especiais.",
+        "errorEmail1": "Teu e-mail é requerido",
+        "errorEmail2": "O e-mail não é válido",
+        "errorMessage": "Coloque uma mensagem válida",
+        "submitSuccess": "Formulário enviado"
+    },
+    "faqs": {
+        "mainTitle": "¡Bem-vindos à Track Travel!",
+        "mainSubtitle": "Aqui estão algumas perguntas frequentes que podem ajudá-lo a entender melhor nossa plataforma e como ela funciona:",
+        "title1": "¿O que é TrackTravel?",
+        "paragraph1": "Track Travel é um aplicativo móvil que conecta turistas com agências de turismo e provedores de serviços de viagens em todo o mundo. Oferecemos uma solução abrangente para planejar, organizar e gerenciar viagens.",
+        "title2": "¿Como funciona o aplicativo?",
+        "paragraph2": "Os usuários podem baixar o aplicativo gratuitamente na App Store ou no Google Play. Uma vez baixados, eles podem pesquisar e reservar viagens, passeios, atividades, hospedagem e transporte. Eles também podem receber recomendações personalizadas com base em seus interesses e preferências.",
+        "title3": "¿Como posso reservar uma viagem na Track Travel?",
+        "paragraph3": "Para reservar uma viagem no Track Travel, você deve primeiro criar uma conta no aplicativo. Você pode pesquisar viagens e passeios com base no seu destino e datas. Depois de encontrar uma viagem de que goste, você pode fazer uma reserva e pagar online.",
+        "title4": "¿Posso cancelar ou alterar a minha reserva?",
+        "paragraph4": "Sim, você pode cancelar ou alterar sua reserva no aplicativo a qualquer momento antes da data de início da viagem. As políticas de cancelamento e alteração variam de acordo com o provedor de serviços de viagem, por isso é importante ler os termos e condições antes de fazer uma reserva.",
+        "title5": "¿Que medidas de segurança foram tomadas para proteger meus dados pessoais e financeiros?",
+        "paragraph5": "Na Track Travel, levamos a segurança de nossos usuários muito a sério. Usamos tecnologia de criptografia avançada para proteger os dados pessoais e financeiros de nossos usuários. Além disso, nunca compartilhamos informações pessoais com terceiros sem o consentimento do usuário.",
+        "title6": "Como posso obter ajuda se tiver um problema com a minha reserva?",
+        "paragraph6": "Se tiver algum problema com a sua reserva, pode contactar-nos através do chat online da app ou enviar um e-mail para a nossa equipa de apoio ao cliente. Faremos o nosso melhor para ajudá-lo a resolver o seu problema o mais rápido possível.",
+        "title7": "¿Que outros serviços a Track Travel oferece além da reserva de viagens?",
+        "paragraph7": "Além da reserva de viagens, o Track Travel também oferece uma variedade de ferramentas e funcionalidades para ajudar os usuários a planejar e gerenciar sua viagem. Isso inclui mapas interativos, recomendações personalizadas, dicas de viagem e um recurso de rastreamento.",
+        "title8": "¿Como posso ter certeza de que estou obtendo o melhor preço para minha viagem?",
+        "paragraph8": "Na Track Travel, trabalhamos com provedores de serviços de viagens em todo o mundo para oferecer aos nossos usuários a melhor seleção de viagens e passeios. Também oferecemos preços competitivos e garantimos que nossos usuários sempre obtenham o melhor preço disponível para suas reservas.",
+        "title9": "¿Como posso deixar comentários e avaliações sobre minha experiência de viagem?",
+        "paragraph9": "Após sua viagem, você receberá um convite para deixar comentários e avaliações sobre sua experiência no aplicativo. Esses comentários e avaliações ajudarão outros usuários a tomar decisões informadas ao reservar viagens e passeios futuros.",
+        "closeText": "¡Obrigado por escolher a Track Travel! Esperamos que esta informação tenha sido útil para você. Se você tiver mais alguma dúvida ou precisar de assistência adicional, não hesite em nos contatar."
+    }
 }

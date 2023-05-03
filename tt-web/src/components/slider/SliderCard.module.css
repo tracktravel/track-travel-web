@@ -45,6 +45,10 @@
   margin: 0 auto;
 }
 
+.titlesPreParagraph {
+  text-transform: uppercase;
+}
+
 /*Botones de Next y Prev*/
 .buttons {
   position: relative;
@@ -72,6 +76,7 @@
 }
 
 .btnGrad {
+  text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: bold;
   padding: 0.8rem 2rem;
