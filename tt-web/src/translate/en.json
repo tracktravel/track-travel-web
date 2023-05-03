@@ -1,8 +1,4 @@
 {
-    "home": {
-        "title1": "Track Travel",
-        "title2": "smarter tours for your agency"
-    },
     "navbar": {
         "home": "Home",
         "about": "About",
@@ -42,19 +38,31 @@
         "titleDescription": "Track Travel is a web/mobile application that facilitates all interactions between Travel Agencies and tourists around the world. Among the most important functionalities we can mention transport tracking, direct communication between the parties, secure sales service and statistical information collected to improve the performance of the service provider. Track Travel has arrived to set a new standard of service, taking your travel agency to a new level.",
         "column1": {
             "title": "Simplicity",
-            "description": "This application was designed to be totally intuitive. Whether you are a partner agency or a tourist, in a matter of a few minutes, it is possible to understand and use all the tools offered. And if any doubts arise, we have explanatory videos and customer service to help you with whatever you need."
+            "description": "This application was designed to be completely intuitive. Whether you are an associated agency or a tourist, it is possible to understand and use all the tools offered in a matter of minutes. And if any doubts arise, we have explanatory videos and customer support to assist you with whatever you need."
         },
         "column2": {
             "title": "Security",
-            "description": "Instead of trying to recreate the wheel, we choose to work with reputable companies when dealing with sensitive data. All of your financial transactions within our site are processed externally from end to end. We take care of the rest."
+            "description": "Instead of trying to reinvent the wheel, we chose to work with highly reputable companies when it comes to handling sensitive data. All financial transactions within our site are externally processed end-to-end. We take care of everything else."
         },
         "column3": {
             "title": "Automation",
-            "description": "Have you already imagined, as a company, to automatically count with accurate performance statistics? Working with our application it will be a matter of a couple of clicks to have information such as: financial statistics, number of passengers transported, approximate location of strong points of sale, kilometers traveled by your transports, performance of your guides, etc."
+            "description": "Have you ever imagined, as a company, having precise performance statistics automatically? Working with our application, it will be a matter of a couple of clicks to have information such as: financial statistics, number of passengers transported, approximate location of strong selling points, kilometers traveled by your transports, performance of your guides, etc. "
         },
         "column4": {
             "title": "Confidence",
             "description": "Track Travel is a company in constant evolution that seeks to transmit confidence by offering solidity in our proposal as well as in our daily commitment to business growth. We know that growing is easier when accompanied and we want to invite you to be part of this adventure. The sky is the limit."
+        }
+    },
+    "slider": {
+        "firstSection": {
+            "title": "You will always have control",
+            "description": "Are you far from your computer? No problem. Our mobile app offers the most important Track Travel tools so you won't miss a thing.",
+            "button": "Explore our tools"
+        },
+        "secondSection": {
+            "title": "Agencies in more than 50 cities are already interested in working with us. Be part of this transformation.",
+            "description": "Are you far from your computer? No problem. Our mobile app offers the most important Track Travel tools so you won't miss a thing.",
+            "button": "View all our partners"
         }
     }
 }

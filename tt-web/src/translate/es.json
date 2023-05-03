@@ -1,7 +1,4 @@
 {
-
-    "title1": "Seguimiento de Viajes",
-    "title2": "Tours mas inteligentes para tu agencia",
     "navbar": {
         "home": "Inicio",
         "about": "Acerca de",
@@ -56,6 +53,18 @@
         "column4": {
             "title": "Confianza",
             "description": "Track Travel es una empresa en constante evolución que busca transmitir confianza ofreciendo solidez en nuestra propuesta como en nuestro compromiso diario de crecimiento empresarial. Sabemos que crecer es más fácil acompañados y queremos invitarte a ser parte de esta aventura. El cielo es el límite."
+        }
+    },
+    "slider": {
+        "firstSection": {
+            "title": "Siempre tendras el control",
+            "description": "¿Estás lejos de tu computadora? No importa. Nuestra app móvil ofrece las herramientas más importantes de Track Travel para que no te pierdas de nada.",
+            "button": "Explora nuestras herramientas"
+        },
+        "secondSection": {
+            "title": "Agencias en más de 50 ciudades ya están interesadas en trabajar con nosotros. Se parte de esta transformación.",
+            "description": "¿Estás lejos de tu computadora? No importa. Nuestra app móvil ofrece las herramientas más importantes de Track Travel para que no te pierdas de nada.",
+            "button": "Ver todos nuestros aliados"
         }
     }
 }
