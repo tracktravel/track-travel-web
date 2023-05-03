@@ -93,6 +93,29 @@
         "errorEmail2": "Tu email no es válido",
         "errorMessage": "Tu mensaje es requerido",
         "submitSuccess": "Formulario enviado"
+    },
+    "faqs": {
+        "mainTitle": "¡Bienvenidos a Track Travel!",
+        "mainSubtitle": "Aquí presentamos algunas preguntas frecuentes que pueden ayudar a comprender mejor nuestra plataforma y cómo funciona:",
+        "title1": "¿Qué es Track Travel?",
+        "paragraph1": "Track Travel es una aplicación móvil que conecta a los turistas con agencias de turismo y proveedores de servicios de viaje de todo el mundo. Ofrecemos una solución integral para la planificación, organización y gestión de viajes.",
+        "title2": "¿Cómo funciona la aplicación?",
+        "paragraph2": "Los usuarios pueden descargar la aplicación de forma gratuita desde la App Store o Google Play. Una vez descargada, pueden buscar y reservar viajes, tours, actividades, alojamiento y transporte. También pueden recibir recomendaciones personalizadas basadas en sus intereses y preferencias.",
+        "title3": "¿Cómo puedo reservar un viaje en Track Travel?",
+        "paragraph3": "Para reservar un viaje en Track Travel, primero debe crear una cuenta en la aplicación. Luego, puede buscar viajes y tours en función de su destino y fechas de viaje. Una vez que haya encontrado un viaje que le guste, puede hacer una reserva y pagar en línea.",
+        "title4": "¿Puedo cancelar o cambiar mi reserva?",
+        "paragraph4": "Sí, puede cancelar o cambiar su reserva en la aplicación en cualquier momento antes de la fecha de inicio del viaje. Las políticas de cancelación y cambio varían según el proveedor de servicios de viaje, por lo que es importante leer los términos y condiciones antes de hacer una reserva.",
+        "title5": "¿Qué medidas de seguridad se han tomado para proteger mis datos personales y financieros?",
+        "paragraph5": "En Track Travel, nos tomamos muy en serio la seguridad de nuestros usuarios. Utilizamos tecnología de encriptación avanzada para proteger los datos personales y financieros de nuestros usuarios. Además, nunca compartimos información personal con terceros sin el consentimiento del usuario.",
+        "title6": "¿Cómo puedo obtener ayuda si tengo un problema con mi reserva?",
+        "paragraph6": "Si tiene algún problema con su reserva, puede contactarnos a través del chat en línea en la aplicación o enviar un correo electrónico a nuestro equipo de soporte al cliente. Haremos todo lo posible para ayudarlo a resolver su problema lo antes posible.",
+        "title7": "¿Qué otros servicios ofrece Track Travel además de la reserva de viajes?",
+        "paragraph7": "Además de la reserva de viajes, Track Travel también ofrece una variedad de herramientas y funcionalidades para ayudar a los usuarios a planificar y gestionar su viaje. Estos incluyen mapas interactivos, recomendaciones personalizadas, consejos de viaje y una función de seguimiento de gastos.",
+        "title8": "¿Cómo puedo estar seguro de que estoy obteniendo el mejor precio para mi viaje?",
+        "paragraph8": "En Track Travel, trabajamos con proveedores de servicios de viaje de todo el mundo para ofrecer a nuestros usuarios la mejor selección de viajes y tours. También ofrecemos precios competitivos y garantizamos que nuestros usuarios siempre obtengan el mejor precio disponible para sus reservas.",
+        "title9": "¿Cómo puedo dejar comentarios y valoraciones sobre mi experiencia de viaje?",
+        "paragraph9": "Después de su viaje, recibirá una invitación para dejar comentarios y valoraciones sobre su experiencia en la aplicación. Estos comentarios y valoraciones ayudarán a otros usuarios a tomar decisiones informadas al reservar viajes y tours en el futuro.",
+        "closeText": "¡Gracias por elegir Track Travel! Esperamos que esta información le haya sido útil. Si tiene más preguntas o necesita ayuda adicional, no dude en contactarnos."
     }
 }
 
