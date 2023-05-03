@@ -52,5 +52,42 @@
             "title": "Confiança",
             "description": "A Track Travel é uma empresa em constante evolução que procura transmitir confiança oferecendo solidez em nossa proposta, assim como em nosso compromisso diário com o crescimento dos negócios. Sabemos que crescer é mais fácil acompanhado e queremos convidar você a fazer parte dessa aventura. O céu é o limite."
         }
+    },
+    "slider": {
+        "firstSection": {
+            "title": "Você sempre terá o controle",
+            "description": "Você está longe do seu computador? Sem problemas. Nosso aplicativo móvil oferece as ferramentas Track Travel mais importantes para que você não perca nada.",
+            "button": "Explore nossas ferramentas"
+        },
+        "secondSection": {
+            "title": "Agências em mais de 50 cidades já estão interessadas em trabalhar conosco. Faça parte dessa transformação.",
+            "description": "Você está longe do seu computador? Sem problemas. Nosso aplicativo móvil oferece as ferramentas Track Travel mais importantes para que você não perca nada.",
+            "button": "Veja todos os nossos parceiros"
+        }
+    },
+    "about": {
+        "title": "Sobre",
+        "firstSection": {
+            "title": "Nossa história",
+            "description": "Uma nova geração de programadores geralmente é impulsionada pela ideia de conseguir um primeiro emprego em uma empresa estabelecida. Essa história não é muito diferente de muitas outras nesse sentido. Vários de nós, atuais integrantes da Track Travel, passamos por experiências desse estilo em empresas já consolidadas e fomos resgatando metodologias de trabalho e experiências necessárias para a realização desse projeto em particular. A nossa história não tem muitos anos, mas orgulhosamente une muita energia com vontades individuais para lhe prestar o melhor serviço possível. Há poucos meses começamos a nos aliar a um objetivo comum de aperfeiçoamento e aprendizado. Hoje trabalhamos constantemente em uma solução prática e pontual para todas as agências de viagens do mundo. Sim, o mundo. E com orgulho levamos adiante toda essa ambição. A ideia nasceu no Rio de Janeiro, após observar várias agências com problemas de gestão no dia a dia, fizemos um estudo mais aprofundado dessas deficiências e começamos a formar nossa equipe. Alguns de nós são amigos de estudos, outros são recém-formados em uma escola de programação comum e, independentemente de nossas origens, compartilhamos o mesmo entusiasmo. A nossa história pode ser bem diferente do storytelling que costumamos ver escrito em uma infinidade de projetos e sites. Não precisamos mentir. Nosso produto falará por si com todas as suas qualidades geradas por este grupo genuíno e persistente."
+        },
+        "secondSection": {
+            "title": "Quem nós somos",
+            "description": "Na Track Travel, somos uma equipe de desenvolvedores web apaixonados com experiência em projetar e desenvolver sites e aplicativos web de alta qualidade. Orgulhamo-nos de oferecer soluções personalizadas para cada um de nossos clientes, com foco na atenção aos detalhes e na experiência do usuário. Nosso objetivo é fornecer uma experiência completa de desenvolvimento web personalizada para atender às necessidades e objetivos de cada cliente. Nós nos esforçamos para usar as mais recentes tecnologias e técnicas para garantir que cada projeto seja desenvolvido de forma eficiente e eficaz. Orgulhamo-nos de trabalhar em estreita colaboração com os nossos clientes para compreender os seus objetivos e necessidades específicas. Acreditamos que uma comunicação clara e constante é a chave para o sucesso de qualquer projeto e nos certificamos de manter nossos clientes informados em todas as etapas do processo de desenvolvimento. Se você precisa de um site simples ou de um aplicativo da web complexo, nossa equipe está aqui para ajudá-lo. Sinta-se à vontade para nos contatar para discutir suas necessidades de desenvolvimento web e como podemos ajudá-lo a atingir seus objetivos online."
+        }
+    },
+    "contact": {
+        "title": "Contato",
+        "subtitle": "Queremos saber sobre você",
+        "placeholderName": "Nome completo",
+        "placeholderEmail": "E-mail",
+        "placeholderMessage": "Mensagem",
+        "button": "Enviar",
+        "errorName": "Coloca um nome válido",
+        "errorName2": "Seu nome não pode conter números ou caracteres especiais.",
+        "errorEmail1": "Teu e-mail é requerido",
+        "errorEmail2": "O e-mail não é válido",
+        "errorMessage": "Coloque uma mensagem válida",
+        "submitSuccess": "Formulário enviado"
     }
 }

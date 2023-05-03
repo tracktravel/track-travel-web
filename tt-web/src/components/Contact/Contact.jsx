@@ -4,26 +4,28 @@ import { MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
-function validate(input) {
+function validate(input, t) {
   let errors = {};
   if (!input.name) {
-    errors.name = "Tu nombre es requerido.";
+    errors.name = t("contact.errorName");
   } else if (/[.!@#$%^&*()_+-=]/.test(input.name)) {
-    errors.name = "Tu nombre no puede tener números o caracteres especiales.";
+    errors.name = t("contact.errorName2");
   }
   if (!input.email) {
-    errors.email = "Tu email es requerido.";
+    errors.email = t("contact.errorEmail1");
   } else if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(input.email)) {
-    errors.email = "Tu email no es válido.";
+    errors.email = t("contact.errorEmail2");
   }
   if (!input.message) {
-    errors.message = "Tu Mensaje es requerido.";
+    errors.message = t("contact.errorMessage");
   }
   return errors;
 }
 
 export default function Contact() {
+  const [t] = useTranslation("global");
   const [errors, setErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false); //Aviso de color informando que el formulario fue enviado
   const [chars, setChars] = useState(0);
@@ -43,7 +45,7 @@ export default function Contact() {
       validate({
         ...input,
         [e.target.name]: e.target.value,
-      })
+      }, t)
     );
     if (e.target.nodeName === "TEXTAREA") {
       setChars(e.target.value.length);
@@ -78,8 +80,8 @@ export default function Contact() {
     <div className={`${styles.contact} `}>
       <div className={`${styles.container} center `}>
         <div className={`${styles.one} `}>
-          <h2 className={`${styles.title} `}>CONTACTO</h2>
-          <h3 className={`${styles.subtitle} `}>Queremos escucharte</h3>
+          <h2 className={`${styles.title} `}>{t("contact.title")}</h2>
+          <h3 className={`${styles.subtitle} `}>{t("contact.subtitle")}</h3>
 
           <div className={` `}>
             {/* <div className={`${styles.section} `}>
@@ -112,7 +114,7 @@ export default function Contact() {
                 type="text"
                 name="name"
                 value={input.name}
-                placeholder="Nombre completo"
+                placeholder={t("contact.placeholderName")}
                 onChange={(e) => handleChange(e)}
               />
               {errors.name && (
@@ -126,7 +128,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 value={input.email}
-                placeholder="Email"
+                placeholder={t("contact.placeholderEmail")}
                 onChange={(e) => handleChange(e)}
               />
               {errors.email && (
@@ -139,7 +141,7 @@ export default function Contact() {
                 className={styles.textarea}
                 name="message"
                 value={input.message}
-                placeholder="Comentarios"
+                placeholder={t("contact.placeholderMessage")}
                 maxLength="500"
                 onChange={(e) => handleChange(e)}
               ></textarea>
@@ -156,16 +158,16 @@ export default function Contact() {
             !errors.message &&
             input.message.length > 0 ? (
               <button className={styles.btnSend} type="submit">
-                ENVIAR
+                {t("contact.button")}
               </button>
             ) : (
               <button className={styles.btnDisabled} type="submit" disabled>
-                ENVIAR
+                {t("contact.button")}
               </button>
             )}
           </form>
           <div className={styles.messageSend}>
-            {formSubmitted && <p>Formulario enviado</p>}
+            {formSubmitted && <p>{t("contact.submitSuccess")}</p>}
           </div>
         </div>
       </div>

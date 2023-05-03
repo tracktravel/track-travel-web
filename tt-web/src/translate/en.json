@@ -75,5 +75,19 @@
             "title": "Who we are?",
             "description": "At Track Travel, we are a team of passionate web developers with expertise in designing and developing high quality websites and web applications. We pride ourselves on delivering customized solutions for each of our clients, focusing on attention to detail and user experience. Our goal is to provide a complete web development experience customized to meet each client's needs and goals. We strive to use the latest technologies and techniques to ensure that each project is developed efficiently and effectively. We pride ourselves on working closely with our clients to understand their specific goals and needs. We believe that clear and constant communication is the key to the success of any project and we make sure to keep our clients informed at every step of the development process. Whether you need a simple website or a complex web application, our team is here to help you. Feel free to contact us to discuss your web development needs and how we can help you achieve your online goals."
         }
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "We want to hear from you.",
+        "placeholderName": "Full name",
+        "placeholderEmail": "Email",
+        "placeholderMessage": "Comments",
+        "button": "Send",
+        "errorName": "Your name is required.",
+        "errorName2": "Your name cannot have numbers or special characters.",
+        "errorEmail1": "Your email is required.",
+        "errorEmail2": "Your email is not valid.",
+        "errorMessage": "Your message is required. ",
+        "submitSuccess": "Form submitted"
     }
 }
