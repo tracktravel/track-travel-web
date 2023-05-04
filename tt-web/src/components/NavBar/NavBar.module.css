@@ -140,6 +140,7 @@
   position: relative;
   width: var(--width-of-switch);
   height: var(--height-of-switch);
+  margin-right: 1rem;
 }
 
 /* Hide default HTML checkbox */
