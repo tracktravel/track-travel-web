@@ -13,13 +13,7 @@ export const team = [
       github: "https://github.com/e0212",
       image: "/team/emiliano.jpg",
     },
-    {
-      name: "Tomás Arregui Bellino",
-      rol: "Backend",
-      linkedin: "https://www.linkedin.com/in/tomasarreguib/",
-      github: "https://github.com/noisyBrain",
-      image: "/team/tomi.jpg",
-    },
+   
     {
       name: "Florencia Fernandez",
       rol: "Frontend",
@@ -28,29 +22,7 @@ export const team = [
       github: "https://github.com/FlorenciaF1",
       image: "/team/flor.jpg",
     },
-    {
-      name: "Andres Felipe Pastor Ferrer",
-      rol: "Backend",
-      linkedin:
-        "https://www.linkedin.com/in/andres-felipe-pastor-ferrer-8080b01ab/",
-      github: "https://github.com/MrAleew",
-      image: "/team/andres.jpg",
-    },
-    {
-      name: "Alan Delgado",
-      rol: "Backend",
-      linkedin: "https://www.linkedin.com/in/alan-delgado8/",
-      github: "https://github.com/alandelgado10",
-      image: "/team/alan.jpg",
-    },
-    {
-      name: "Geovanni Casadiegos Rodriguez",
-      rol: "Backend",
-      linkedin:
-        "https://www.linkedin.com/in/geovanny-casadiegos-rodriguez-86154a143/",
-      github: "",
-      image: "/team/geo.jpg",
-    },
+    
     {
       name: "Carlos Mario Reyes Pena",
       rol: "Full Stack",
